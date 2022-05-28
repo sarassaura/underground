@@ -7,6 +7,7 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:cypress/recommended",
+    "plugin:jest-dom/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -17,7 +18,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "jest-dom"],
   "rules": {
     "import/extensions": "off",
     "import/no-unresolved": "off",

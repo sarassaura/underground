@@ -8,7 +8,7 @@ function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="">Oi</h1>
+      <h1 className="invented">poo</h1>
       <Button colorScheme="teal">Button</Button>
     </div>
   )
