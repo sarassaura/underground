@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Button } from '@chakra-ui/react'
+import { Skeleton, SkeletonCircle, SkeletonText } from '@chakra-ui/react'
 
 function Home() {
   return (
@@ -8,8 +8,15 @@ function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="invented">poo</h1>
-      <Button colorScheme="teal">Button</Button>
+      <div className="w-full h-screen">
+        <Skeleton
+          startColor="pink.500"
+          endColor="orange.500"
+          className="h-screen"
+        />
+        <SkeletonCircle size="16" />
+        <SkeletonText mt="7" noOfLines={10} spacing="3" />
+      </div>
     </div>
   )
 }
