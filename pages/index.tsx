@@ -1,22 +1,22 @@
 import Head from 'next/head'
-import { Skeleton, SkeletonCircle, SkeletonText } from '@chakra-ui/react'
+import { Button, useColorMode } from '@chakra-ui/react'
+import { VscColorMode } from 'react-icons/vsc'
 
 function Home() {
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-full h-screen">
-        <Skeleton
-          startColor="pink.500"
-          endColor="orange.500"
-          className="h-screen"
-        />
-        <SkeletonCircle size="16" />
-        <SkeletonText mt="7" noOfLines={10} spacing="3" />
-      </div>
+      <h1>ok Tesxt</h1>
+      <Button
+        variant={colorMode === 'dark' ? 'solid' : 'ghost'}
+        onClick={toggleColorMode}
+      >
+        <VscColorMode />
+      </Button>
     </div>
   )
 }
