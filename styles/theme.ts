@@ -1,16 +1,34 @@
-import { extendTheme } from '@chakra-ui/react'
+import {
+  extendTheme,
+  useColorModeValue,
+  type ThemeConfig,
+} from '@chakra-ui/react'
 
-const theme = extendTheme({
-  colors: {
-    coolpink: '#cb11d9',
-    coolcyan: '#21b89f',
-    coolyellow: '#ebd96a',
-    coolblue: '#060fff',
-    coolgreen: '#00b212',
-    coolred: '#fe0d26',
-    coolpurple: '#8b01ff',
-    coolorange: '#f7841c',
-  },
-})
+const styles = {
+  global: () => ({
+    body: {
+      bg: useColorModeValue('#f0e7db', '#202023'),
+    },
+  }),
+}
+
+const colors = {
+  coolPink: '#cb11d9',
+  coolCyan: '#21b89f',
+  coolYellow: '#ebd96a',
+  coolBlue: '#060fff',
+  coolGreen: '#00b212',
+  coolRed: '#fe0d26',
+  coolPurple: '#8b01ff',
+  coolOrange: '#f7841c',
+}
+
+const config: ThemeConfig = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+  cssVarPrefix: 'chakra',
+}
+
+const theme = extendTheme({ styles, colors, config })
 
 export default theme
