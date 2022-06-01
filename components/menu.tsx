@@ -9,6 +9,9 @@ import {
   MenuList,
   MenuItem,
   Show,
+  Hide,
+  HStack,
+  Divider,
 } from '@chakra-ui/react'
 import { VscColorMode } from 'react-icons/vsc'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -54,7 +57,7 @@ function MenuComponent() {
           </svg>
         </Button>
       </ButtonGroup>
-      <Show above="md">
+      <Hide below="md">
         <ButtonGroup gap="1">
           <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
             <h1>Home</h1>
@@ -84,22 +87,32 @@ function MenuComponent() {
             <VscColorMode />
           </Button>
         </ButtonGroup>
-      </Show>
+      </Hide>
       <Show below="md">
-        <Menu>
-          <MenuButton
-            as={IconButton}
-            aria-label="Options"
-            icon={<GiHamburgerMenu />}
-            variant="outline"
-            marginEnd={3}
-          />
-          <MenuList>
-            <MenuItem>Home</MenuItem>
-            <MenuItem>Profile</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-          </MenuList>
-        </Menu>
+        <HStack spacing={0} paddingInline={3}>
+          <Menu>
+            <Button
+              variant={colorMode === 'dark' ? 'outline' : 'ghost'}
+              colorScheme={colorMode === 'dark' ? 'pink' : 'blue'}
+              onClick={toggleColorMode}
+              marginX={3}
+            >
+              <VscColorMode />
+            </Button>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<GiHamburgerMenu />}
+              variant="outline"
+            />
+            <MenuList>
+              <MenuItem>Home</MenuItem>
+              <MenuItem>Profile</MenuItem>
+              <Divider orientation="horizontal" />
+              <MenuItem>Mark as Draft</MenuItem>
+            </MenuList>
+          </Menu>
+        </HStack>
       </Show>
     </Flex>
   )
