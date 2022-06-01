@@ -13,17 +13,13 @@ import {
   HStack,
   Divider,
 } from '@chakra-ui/react'
-import { VscColorMode } from 'react-icons/vsc'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { FiTwitter } from 'react-icons/fi'
-import {
-  AiOutlineYoutube,
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-} from 'react-icons/ai'
+import Social from './social'
+import ThemeButton from './themeButton'
+import Logo from '../public/logo'
 
 function MenuComponent() {
-  const { colorMode, toggleColorMode } = useColorMode()
+  const { colorMode } = useColorMode()
   return (
     <Flex
       width="100%"
@@ -37,68 +33,31 @@ function MenuComponent() {
       }
     >
       <ButtonGroup marginStart={3}>
-        <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-          <svg
-            id="SVGRoot"
-            version="1.1"
-            viewBox="0 0 13.536 13.536"
-            xmlns="http://www.w3.org/2000/svg"
-            height="30px"
-            width="30px"
-          >
-            <g transform="translate(-1.2322 -1.2322)">
-              <path
-                d="m3 3 10 10"
-                fill="#3aad00"
-                stroke="#ffffff"
-                strokeWidth="5"
-              />
-            </g>
-          </svg>
+        <Button variant="ghost">
+          <Logo />
         </Button>
       </ButtonGroup>
       <Hide below="md">
         <ButtonGroup gap="1">
           <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>Home</h1>
+            <h1>Sobre</h1>
           </Button>
           <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>Profile</h1>
+            <h1>Trampos</h1>
+          </Button>
+          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
+            <h1>Contato</h1>
           </Button>
         </ButtonGroup>
-        <ButtonGroup marginEnd={3}>
-          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <AiOutlineInstagram />
-          </Button>
-          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <AiOutlineYoutube />
-          </Button>
-          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <AiOutlineFacebook />
-          </Button>
-          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <FiTwitter />
-          </Button>
-          <Button
-            variant={colorMode === 'dark' ? 'outline' : 'ghost'}
-            colorScheme={colorMode === 'dark' ? 'pink' : 'blue'}
-            onClick={toggleColorMode}
-          >
-            <VscColorMode />
-          </Button>
+        <ButtonGroup>
+          <Social />
+          <ThemeButton />
         </ButtonGroup>
       </Hide>
       <Show below="md">
         <HStack spacing={0} paddingInline={3}>
           <Menu>
-            <Button
-              variant={colorMode === 'dark' ? 'outline' : 'ghost'}
-              colorScheme={colorMode === 'dark' ? 'pink' : 'blue'}
-              onClick={toggleColorMode}
-              marginX={3}
-            >
-              <VscColorMode />
-            </Button>
+            <ThemeButton />
             <MenuButton
               as={IconButton}
               aria-label="Options"
@@ -106,10 +65,13 @@ function MenuComponent() {
               variant="outline"
             />
             <MenuList>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>Profile</MenuItem>
+              <MenuItem>Sobre</MenuItem>
+              <MenuItem>Trampos</MenuItem>
+              <MenuItem>Contato</MenuItem>
               <Divider orientation="horizontal" />
-              <MenuItem>Mark as Draft</MenuItem>
+              <MenuItem display="flex" justifyContent="center" gap={5}>
+                <Social />
+              </MenuItem>
             </MenuList>
           </Menu>
         </HStack>
