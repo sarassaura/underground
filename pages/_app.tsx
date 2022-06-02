@@ -3,12 +3,15 @@ import type { AppProps } from 'next/app'
 import '../styles/globals.css'
 import Fonts from '../styles/fonts'
 import theme from '../styles/theme'
+import Layout from '../components/layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ChakraProvider>
   )
 }
