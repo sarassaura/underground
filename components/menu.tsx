@@ -40,13 +40,13 @@ function MenuComponent() {
       <Hide below="md">
         <ButtonGroup gap="1">
           <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>Sobre</h1>
+            <h1>SOBRE</h1>
           </Button>
           <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>Trampos</h1>
+            <h1>TRAMPOS</h1>
           </Button>
           <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>Contato</h1>
+            <h1>CONTATO</h1>
           </Button>
         </ButtonGroup>
         <ButtonGroup>
@@ -65,13 +65,13 @@ function MenuComponent() {
               variant="outline"
             />
             <MenuList>
-              <MenuItem>Sobre</MenuItem>
-              <MenuItem>Trampos</MenuItem>
-              <MenuItem>Contato</MenuItem>
+              <MenuItem>SOBRE</MenuItem>
+              <MenuItem>TRAMPOS</MenuItem>
+              <MenuItem>CONTATO</MenuItem>
               <Divider orientation="horizontal" />
-              <MenuItem display="flex" justifyContent="center" gap={5}>
+              <Flex justifyContent="center" my={2} gap={5}>
                 <Social />
-              </MenuItem>
+              </Flex>
             </MenuList>
           </Menu>
         </HStack>
