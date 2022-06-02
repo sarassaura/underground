@@ -12,6 +12,11 @@ const styles = {
   }),
 }
 
+const fonts = {
+  body: `'Kdam Thmor Pro', sans-serif`,
+  p: `'Lobster', cursive`,
+}
+
 const colors = {
   coolPink: '#cb11d9',
   coolCyan: '#21b89f',
@@ -29,6 +34,6 @@ const config: ThemeConfig = {
   cssVarPrefix: 'chakra',
 }
 
-const theme = extendTheme({ styles, colors, config })
+const theme = extendTheme({ styles, colors, fonts, config })
 
 export default theme

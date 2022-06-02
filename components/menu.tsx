@@ -20,6 +20,7 @@ import Logo from '../public/logo'
 
 function MenuComponent() {
   const { colorMode } = useColorMode()
+  const itemName = ['SOBRE', 'TRAMPOS', 'CONTATO']
   return (
     <Flex
       width="100%"
@@ -39,15 +40,14 @@ function MenuComponent() {
       </ButtonGroup>
       <Hide below="md">
         <ButtonGroup gap="1">
-          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>SOBRE</h1>
-          </Button>
-          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>TRAMPOS</h1>
-          </Button>
-          <Button variant={colorMode === 'dark' ? 'solid' : 'ghost'}>
-            <h1>CONTATO</h1>
-          </Button>
+          {itemName.map((item) => (
+            <Button
+              variant={colorMode === 'dark' ? 'solid' : 'ghost'}
+              key={item}
+            >
+              <h1>{item}</h1>
+            </Button>
+          ))}
         </ButtonGroup>
         <ButtonGroup>
           <Social />

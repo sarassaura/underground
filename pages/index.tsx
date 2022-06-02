@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Features from '../components/features'
 import Hero from '../components/hero'
 import MenuComponent from '../components/menu'
 
@@ -11,6 +12,7 @@ function Home() {
       </Head>
       <MenuComponent />
       <Hero />
+      <Features />
     </div>
   )
 }
