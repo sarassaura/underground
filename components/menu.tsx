@@ -14,13 +14,18 @@ import {
   Divider,
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import Link from 'next/link'
 import Social from './social'
 import ThemeButton from './themeButton'
 import Logo from '../public/logo'
 
 function MenuComponent() {
   const { colorMode } = useColorMode()
-  const itemName = ['SOBRE', 'TRAMPOS', 'CONTATO']
+  const itemName = [
+    { route: '', name: 'sobre' },
+    { route: 'trampos', name: 'trampos' },
+    { route: 'contato', name: 'contato' },
+  ]
   return (
     <Flex
       width="100%"
@@ -43,12 +48,14 @@ function MenuComponent() {
       <Hide below="md">
         <ButtonGroup gap="1">
           {itemName.map((item) => (
-            <Button
-              variant={colorMode === 'dark' ? 'solid' : 'ghost'}
-              key={item}
-            >
-              <h1>{item}</h1>
-            </Button>
+            <Link href={`/${item.route}`} key={item.route}>
+              <Button
+                variant={colorMode === 'dark' ? 'solid' : 'ghost'}
+                key={item.name}
+              >
+                <h1 className="uppercase">{item.name}</h1>
+              </Button>
+            </Link>
           ))}
         </ButtonGroup>
         <ButtonGroup>
@@ -67,9 +74,13 @@ function MenuComponent() {
               variant="outline"
             />
             <MenuList>
-              <MenuItem>SOBRE</MenuItem>
-              <MenuItem>TRAMPOS</MenuItem>
-              <MenuItem>CONTATO</MenuItem>
+              {itemName.map((item) => (
+                <Link href={`/${item.route}`} key={item.route}>
+                  <MenuItem className="uppercase" key={item.name}>
+                    {item.name}
+                  </MenuItem>
+                </Link>
+              ))}
               <Divider orientation="horizontal" />
               <Flex justifyContent="center" my={2} gap={5}>
                 <Social />
