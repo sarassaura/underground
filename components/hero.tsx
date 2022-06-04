@@ -1,15 +1,17 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, useColorModeValue } from '@chakra-ui/react'
 
 function Hero() {
   return (
     <Flex
       width="100%"
       height="70vh"
-      bgColor="chocolate"
+      minH="20rem"
+      bgColor={useColorModeValue('#c4521a', '#d4441c')}
       justify="center"
       align="center"
+      as="header"
     >
-      hero
+      <p>hero</p>
     </Flex>
   )
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import Footer from './footer'
 import MenuComponent from './menu'
 
 interface LayoutProps {
@@ -17,6 +18,7 @@ function Layout({ children }: LayoutProps) {
         <MenuComponent />
         {children}
       </main>
+      <Footer />
     </>
   )
 }

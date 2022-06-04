@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
 import Card from './card'
 
 function Features() {
@@ -20,16 +20,18 @@ function Features() {
     },
   ]
   return (
-    <Flex
+    <Stack
       width="90%"
       justify="center"
       align="center"
       direction={['column', 'column', 'row', 'row']}
+      spacing="24px"
+      py="10"
     >
       {itemsName.map((item) => (
         <Card title={item.title} text={item.text} key={item.id} />
       ))}
-    </Flex>
+    </Stack>
   )
 }
 

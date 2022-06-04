@@ -32,10 +32,12 @@ function MenuComponent() {
           ? 'linear(to-r, pink, blue)'
           : 'linear(to-r, blue, pink)'
       }
+      as="menu"
     >
       <ButtonGroup marginStart={3}>
-        <Button variant="ghost">
+        <Button variant="ghost" className="space-x-5">
           <Logo />
+          <h1 className="text-stone-50">Me</h1>
         </Button>
       </ButtonGroup>
       <Hide below="md">

@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, useColorModeValue } from '@chakra-ui/react'
 
 interface PropsType {
   title: String
@@ -9,13 +9,17 @@ function Card({ title, text }: PropsType) {
   return (
     <Flex
       direction="column"
-      margin={5}
       width="100%"
-      height={['25vh', '20vh', '35vh', '30vh']}
-      bgColor="blueviolet"
+      height={['25vh', '25vh', '35vh', '30vh']}
+      minH={['10rem', '10rem', '15rem', '10rem']}
+      bgColor={useColorModeValue('#ff8214', 'blueviolet')}
+      shadow="md"
+      borderWidth="3px 0px 0px 0px"
+      borderColor={useColorModeValue('#141414', 'antiquewhite')}
+      borderRadius="md"
     >
-      <h1 className="text-center m-3">{title}</h1>
-      <p className="p-2">{text}</p>
+      <h2 className="text-center m-3 text-2xl">{title}</h2>
+      <p className="p-2 mt-2">{text}</p>
     </Flex>
   )
 }

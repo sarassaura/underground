@@ -14,7 +14,7 @@ const styles = {
 
 const fonts = {
   body: `'Kdam Thmor Pro', sans-serif`,
-  p: `'Lobster', cursive`,
+  thead: `'Lobster', cursive`,
 }
 
 const colors = {
