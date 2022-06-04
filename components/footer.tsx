@@ -9,7 +9,7 @@ function Footer() {
       minH="3rem"
       justifyContent="center"
       align="center"
-      bgColor={useColorModeValue('#aa2222', '#4501cc')}
+      bgColor={useColorModeValue('lightRed', 'darkBlue')}
     >
       @It&apos;s me!
     </Flex>

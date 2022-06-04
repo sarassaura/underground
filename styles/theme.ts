@@ -7,7 +7,7 @@ import {
 const styles = {
   global: () => ({
     body: {
-      bg: useColorModeValue('#f0e7db', '#202023'),
+      bg: useColorModeValue('lightWhite', 'darkBlack'),
     },
   }),
 }
@@ -18,14 +18,16 @@ const fonts = {
 }
 
 const colors = {
-  coolPink: '#cb11d9',
-  coolCyan: '#21b89f',
-  coolYellow: '#ebd96a',
-  coolBlue: '#060fff',
-  coolGreen: '#00b212',
-  coolRed: '#fe0d26',
-  coolPurple: '#8b01ff',
-  coolOrange: '#f7841c',
+  lightPurple: '#C82FED',
+  lightWhite: '#F7F2DA',
+  lightBlue: '#39B2E0',
+  lightRed: '#F74831',
+  lightGreen: '#75ED2F',
+  darkGreen: '#30ED2F',
+  darkblack: '#212121',
+  darkCyan: '#38B1E0',
+  darkBlue: '#3147F7',
+  darkPurple: '#8A2BE2',
 }
 
 const config: ThemeConfig = {

@@ -29,11 +29,7 @@ function MenuComponent() {
       alignItems="center"
       justify="space-between"
       padding={1}
-      bgGradient={
-        colorMode === 'dark'
-          ? 'linear(to-r, pink, blue)'
-          : 'linear(to-r, blue, pink)'
-      }
+      bgColor={colorMode === 'dark' ? 'darkBlue' : 'lightRed'}
       as="menu"
     >
       <Link href="/">

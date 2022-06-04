@@ -6,7 +6,7 @@ function Hero() {
       width="100%"
       height="70vh"
       minH="20rem"
-      bgColor={useColorModeValue('#c4521a', '#d4441c')}
+      bgColor={useColorModeValue('lightBlue', 'darkCyan')}
       justify="center"
       align="center"
       as="header"
