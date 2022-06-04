@@ -18,14 +18,11 @@ import Link from 'next/link'
 import Social from './social'
 import ThemeButton from './themeButton'
 import Logo from '../public/logo'
+import { textMenu } from '../constants/text'
 
 function MenuComponent() {
   const { colorMode } = useColorMode()
-  const itemName = [
-    { route: '', name: 'sobre' },
-    { route: 'trampos', name: 'trampos' },
-    { route: 'contato', name: 'contato' },
-  ]
+  const itemName = textMenu()
   return (
     <Flex
       width="100%"
@@ -39,12 +36,14 @@ function MenuComponent() {
       }
       as="menu"
     >
-      <ButtonGroup marginStart={3}>
-        <Button variant="ghost" className="space-x-5">
-          <Logo />
-          <h1 className="text-stone-50">Me</h1>
-        </Button>
-      </ButtonGroup>
+      <Link href="/">
+        <ButtonGroup marginStart={3}>
+          <Button variant="ghost" className="space-x-5">
+            <Logo />
+            <h1 className="text-stone-50">Me</h1>
+          </Button>
+        </ButtonGroup>
+      </Link>
       <Hide below="md">
         <ButtonGroup gap="1">
           {itemName.map((item) => (
