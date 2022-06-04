@@ -8114,6 +8114,7 @@ __metadata:
     "@chakra-ui/react": ^2.1.2
     "@emotion/react": ^11
     "@emotion/styled": ^11
+    "@jest/globals": ^28.1.0
     "@swc/core": ^1.2.194
     "@swc/jest": ^0.2.21
     "@testing-library/dom": ^8.13.0

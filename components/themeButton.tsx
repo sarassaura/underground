@@ -4,8 +4,8 @@ import { VscColorMode } from 'react-icons/vsc'
 function ThemeButton() {
   const { toggleColorMode } = useColorMode()
   return (
-    <Button onClick={toggleColorMode} marginX={2}>
-      <VscColorMode />
+    <Button onClick={toggleColorMode} marginX={2} data-testid="custom-element">
+      <VscColorMode data-testid="custom-element-2" />
     </Button>
   )
 }
