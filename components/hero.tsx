@@ -1,4 +1,4 @@
-import { Flex, useColorModeValue } from '@chakra-ui/react'
+import { Flex, Heading, useColorModeValue } from '@chakra-ui/react'
 
 function Hero() {
   return (
@@ -10,8 +10,9 @@ function Hero() {
       justify="center"
       align="center"
       as="header"
+      clipPath="polygon(55% 0%, 45% 100%, 100% 100%, 100% 0%)"
     >
-      <p>hero</p>
+      <Heading>hero</Heading>
     </Flex>
   )
 }

@@ -1,4 +1,7 @@
-function Logo() {
+interface Props {
+  color: string
+}
+function Logo({ color }: Props) {
   return (
     <svg
       id="SVGRoot"
@@ -9,7 +12,7 @@ function Logo() {
       width="30px"
     >
       <g transform="translate(-1.2322 -1.2322)">
-        <path d="m3 3 10 10" fill="#3aad00" stroke="#ffffff" strokeWidth="5" />
+        <path d="m3 3 10 10" stroke={color} strokeWidth="5" />
       </g>
     </svg>
   )

@@ -14,7 +14,7 @@ const styles = {
 
 const fonts = {
   body: `'Kdam Thmor Pro', sans-serif`,
-  thead: `'Lobster', cursive`,
+  heading: `'Lobster', cursive`,
 }
 
 const colors = {
@@ -24,7 +24,7 @@ const colors = {
   lightRed: '#F74831',
   lightGreen: '#75ED2F',
   darkGreen: '#30ED2F',
-  darkblack: '#212121',
+  darkBlack: '#212121',
   darkCyan: '#38B1E0',
   darkBlue: '#3147F7',
   darkPurple: '#8A2BE2',

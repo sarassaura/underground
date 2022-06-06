@@ -34,8 +34,16 @@ function MenuComponent() {
     >
       <Link href="/">
         <ButtonGroup marginStart={3}>
-          <Button variant="ghost" className="space-x-5">
-            <Logo />
+          <Button
+            variant="ghost"
+            className="space-x-5"
+            _hover={
+              colorMode === 'dark'
+                ? { bg: 'whiteAlpha.200' }
+                : { bg: 'darkBlack' }
+            }
+          >
+            <Logo color="#F7F2DA" />
             <h1 className="text-stone-50">Me</h1>
           </Button>
         </ButtonGroup>
