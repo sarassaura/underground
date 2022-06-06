@@ -1,5 +1,7 @@
+import { Flex } from '@chakra-ui/react'
+
 function Facts() {
-  return <div>facts</div>
+  return <Flex>facts</Flex>
 }
 
 export default Facts
