@@ -17,13 +17,15 @@ function Trampos() {
     >
       <Heading>Trampos</Heading>
       <Text margin={5}>Nenhum trabalho é ruim, ruim é ter que trabalhar</Text>
-      <ChakraImage
-        src="/pai.webp"
-        alt="image"
-        width="320px"
-        height="214px"
-        rounded="2xl"
-      />
+      <Flex>
+        <ChakraImage
+          src="/pai.webp"
+          alt="image"
+          width="320px"
+          height="214px"
+          rounded="2xl"
+        />
+      </Flex>
     </Flex>
   )
 }

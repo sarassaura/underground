@@ -10,8 +10,6 @@ function Card({ title, text }: PropsType) {
     <Flex
       direction="column"
       width="100%"
-      height={['25vh', '25vh', '35vh', '30vh']}
-      minH={['10rem', '10rem', '15rem', '10rem']}
       bgColor={useColorModeValue('lightGreen', 'darkPurple')}
       shadow="md"
       borderWidth="3px 0px 0px 0px"

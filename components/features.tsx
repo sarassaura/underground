@@ -7,8 +7,9 @@ function Features() {
   return (
     <Stack
       width="90%"
+      height="fit-content"
       justify="center"
-      align="center"
+      alignItems="stretch"
       direction={['column', 'column', 'row', 'row']}
       spacing="24px"
       py="10"

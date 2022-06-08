@@ -5,7 +5,6 @@ function Footer() {
     <Flex
       as="footer"
       width="100%"
-      height="10vh"
       minH="3rem"
       justifyContent="center"
       align="center"

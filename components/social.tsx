@@ -3,7 +3,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 
 function Social() {
   return (
-    <Button>
+    <Button title="instagram">
       <AiOutlineInstagram />
     </Button>
   )
