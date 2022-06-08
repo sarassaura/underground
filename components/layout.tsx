@@ -14,7 +14,7 @@ function Layout({ children }: LayoutProps) {
         <title>Underground</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-fit flex-col items-center">
+      <main className="flex min-h-fit flex-col items-center grow shrink-0 basis-auto">
         <MenuComponent />
         {children}
       </main>

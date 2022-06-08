@@ -12,18 +12,17 @@ function Contato() {
   return (
     <Flex
       width="100%"
-      height="90vh"
-      minH={['40rem', '40rem', '30rem', '30rem']}
-      maxH={['40rem', '40rem', '60rem', '60rem']}
+      minH="fit-content"
       justify="center"
       align="center"
       direction="column"
+      paddingY={5}
     >
       <Heading>Contato</Heading>
-      <Text margin={5}>Se quiser saber como me chamar, me chame de deuso</Text>
+      <Text marginY={5}>Se quiser saber como me chamar, me chame de deuso</Text>
       <Flex
         width="70%"
-        height=""
+        minH="fit-content"
         direction={['column', 'column', 'row', 'row']}
       >
         <Flex

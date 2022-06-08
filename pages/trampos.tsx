@@ -9,11 +9,11 @@ function Trampos() {
   return (
     <Flex
       width="100%"
-      height="90vh"
-      minH="20rem"
+      minH="fit-content"
       justify="center"
       align="center"
       direction="column"
+      paddingY={5}
     >
       <Heading>Trampos</Heading>
       <Text margin={5}>Nenhum trabalho é ruim, ruim é ter que trabalhar</Text>

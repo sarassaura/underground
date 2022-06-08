@@ -9,6 +9,7 @@ function Footer() {
       justifyContent="center"
       align="center"
       bgColor={useColorModeValue('lightRed', 'darkBlue')}
+      shrink={0}
     >
       @It&apos;s me!
     </Flex>
