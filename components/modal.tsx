@@ -14,9 +14,17 @@ interface ModalTypes {
   isOpening: boolean
   onClosing: () => void
   srcing: string
+  titling: string
+  alting: string
 }
 
-function ModalComponent({ isOpening, onClosing, srcing }: ModalTypes) {
+function ModalComponent({
+  isOpening,
+  onClosing,
+  srcing,
+  titling,
+  alting,
+}: ModalTypes) {
   const ChakraImage = chakra(Image, {
     shouldForwardProp: (prop) =>
       [
@@ -44,7 +52,7 @@ function ModalComponent({ isOpening, onClosing, srcing }: ModalTypes) {
       />
       <ModalContent>
         <ModalHeader>
-          <Flex justifyContent="center">Title</Flex>
+          <Flex justifyContent="center">{titling}</Flex>
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody paddingX={0}>
@@ -57,9 +65,9 @@ function ModalComponent({ isOpening, onClosing, srcing }: ModalTypes) {
           >
             <ChakraImage
               src={srcing}
-              alt="image"
-              key="image"
-              id="image"
+              alt={`image ${alting}`}
+              key={`key ${alting}`}
+              id={`id ${alting}`}
               layout="fill"
               objectFit="contain"
             />

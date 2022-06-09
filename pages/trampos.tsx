@@ -20,22 +20,24 @@ function Trampos() {
       <Heading>Trampos</Heading>
       <Text margin={5}>Nenhum trabalho é ruim, ruim é ter que trabalhar</Text>
       <Flex>
-        {/* //start */}
-        <span onClick={onOpen} onKeyUp={onOpen} role="button" tabIndex={0}>
-          <ChakraImage
-            src="/pai.webp"
-            alt="image"
-            width="320px"
-            height="214px"
-            rounded="2xl"
+        <>
+          <span onClick={onOpen} onKeyUp={onOpen} role="button" tabIndex={0}>
+            <ChakraImage
+              src="/pai.webp"
+              alt="image"
+              width="320px"
+              height="214px"
+              rounded="2xl"
+            />
+          </span>
+          <ModalComponent
+            isOpening={isOpen}
+            onClosing={onClose}
+            titling="title"
+            alting="007"
+            srcing="/pai.webp"
           />
-        </span>
-        <ModalComponent
-          isOpening={isOpen}
-          onClosing={onClose}
-          srcing="/pai.webp"
-        />
-        {/* //finish */}
+        </>
       </Flex>
     </Flex>
   )
