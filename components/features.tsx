@@ -7,7 +7,6 @@ function Features() {
   return (
     <Stack
       width="90%"
-      height="fit-content"
       justify="center"
       alignItems="stretch"
       direction={['column', 'column', 'row', 'row']}

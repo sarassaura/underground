@@ -1,10 +1,12 @@
-import { Flex, Heading, Text, chakra } from '@chakra-ui/react'
+import { Flex, Heading, Text, chakra, useDisclosure } from '@chakra-ui/react'
 import Image from 'next/image'
+import ModalComponent from '../components/modal'
 
 function Trampos() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const ChakraImage = chakra(Image, {
     shouldForwardProp: (prop) =>
-      ['width', 'height', 'alt', 'src'].includes(prop),
+      ['width', 'height', 'alt', 'src', 'priority'].includes(prop),
   })
   return (
     <Flex
@@ -18,13 +20,17 @@ function Trampos() {
       <Heading>Trampos</Heading>
       <Text margin={5}>Nenhum trabalho é ruim, ruim é ter que trabalhar</Text>
       <Flex>
-        <ChakraImage
-          src="/pai.webp"
-          alt="image"
-          width="320px"
-          height="214px"
-          rounded="2xl"
-        />
+        <span onClick={onOpen} onKeyUp={onOpen} role="button" tabIndex={0}>
+          <ChakraImage
+            src="/pai.webp"
+            alt="image"
+            width="320px"
+            height="214px"
+            rounded="2xl"
+            priority
+          />
+        </span>
+        <ModalComponent isOpening={isOpen} onClosing={onClose} />
       </Flex>
     </Flex>
   )
