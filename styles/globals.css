@@ -27,12 +27,13 @@
   .overimage {
     border-radius: 0.8rem !important;
     background: radial-gradient(ellipse at center, transparent, black);
+    cursor: zoom-in;
     opacity: 0;
     transition: all 0.5s ease-out;
   }
   .overimage:hover {
     opacity: 1;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 0.3s ease-in;
   }
 }
 
