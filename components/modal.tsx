@@ -19,7 +19,15 @@ interface ModalTypes {
 function ModalComponent({ isOpening, onClosing, srcing }: ModalTypes) {
   const ChakraImage = chakra(Image, {
     shouldForwardProp: (prop) =>
-      ['width', 'height', 'alt', 'src', 'priority'].includes(prop),
+      [
+        'width',
+        'height',
+        'alt',
+        'src',
+        'priority',
+        'layout',
+        'objectFit',
+      ].includes(prop),
   })
   return (
     <Modal
@@ -27,7 +35,6 @@ function ModalComponent({ isOpening, onClosing, srcing }: ModalTypes) {
       onClose={onClosing}
       size={['xl', '2xl', '3xl', '5xl']}
       motionPreset="scale"
-      isCentered
       preserveScrollBarGap
       blockScrollOnMount
     >
@@ -40,13 +47,21 @@ function ModalComponent({ isOpening, onClosing, srcing }: ModalTypes) {
           <Flex justifyContent="center">Title</Flex>
         </ModalHeader>
         <ModalCloseButton />
-        <ModalBody>
-          <Flex alignContent="center" justify="center">
+        <ModalBody paddingX={0}>
+          <Flex
+            alignContent="center"
+            justify="center"
+            width="100%"
+            height="69vh"
+            position="relative"
+          >
             <ChakraImage
               src={srcing}
               alt="image"
-              width="640px"
-              height="428px"
+              key="image"
+              id="image"
+              layout="fill"
+              objectFit="contain"
             />
           </Flex>
         </ModalBody>
