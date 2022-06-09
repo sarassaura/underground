@@ -48,13 +48,14 @@ function Trampos(posts: Imagine) {
         {posts.results!.map((dog, index) => (
           <span
             key={`key prop: ${dog.id}`}
-            className="justify-center w-full inline-grid mb-2"
+            className="justify-center w-fit h-fit flex mb-3"
           >
             <span
               onClick={onOpen}
               onKeyUp={onOpen}
               role="button"
               tabIndex={index}
+              className="flex relative"
             >
               <ChakraImage
                 src={dog.urls.thumb}
@@ -66,6 +67,7 @@ function Trampos(posts: Imagine) {
                 blurDataURL={dog.real_hash}
                 rounded="2xl"
               />
+              <span className="absolute h-full w-full overimage" />
             </span>
           </span>
         ))}

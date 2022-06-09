@@ -20,11 +20,19 @@
 }
 
 @layer components {
-  figure > span > img {
+  img {
     filter: blur(0) !important;
+    border-radius: 1rem !important;
   }
   .overimage {
+    border-radius: 0.8rem !important;
     background: radial-gradient(ellipse at center, transparent, black);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+  .overimage:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
   }
 }
 
