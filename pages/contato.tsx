@@ -7,6 +7,12 @@ import {
   Button,
   Textarea,
 } from '@chakra-ui/react'
+import {
+  AiOutlineMail,
+  AiOutlineWhatsApp,
+  AiOutlinePhone,
+  AiOutlineEnvironment,
+} from 'react-icons/ai'
 
 function Contato() {
   return (
@@ -21,7 +27,7 @@ function Contato() {
       <Heading>Contato</Heading>
       <Text marginY={5}>Se quiser saber como me chamar, me chame de deuso</Text>
       <Flex
-        width="70%"
+        width={['90%', '90%', '90%', '80%']}
         minH="fit-content"
         direction={['column', 'column', 'row', 'row']}
       >
@@ -30,14 +36,19 @@ function Contato() {
           justifyContent="center"
           alignItems="center"
           direction="column"
+          marginY={[4, 4, 0, 0]}
         >
           <Heading fontSize="2xl" marginBottom={3}>
             Chama
           </Heading>
           <Flex direction="column">
-            <p>Endereço: Rua d tal</p>
+            <AiOutlineEnvironment className="self-center text-2xl mb-3" />
+            <p>Endereço: Rua d tal, 3600</p>
+            <AiOutlinePhone className="self-center text-2xl mb-3" />
             <p>Telefone: +55 11 99123-4563</p>
+            <AiOutlineWhatsApp className="self-center text-2xl mb-3" />
             <p>Whatsapp: +55 11 99874-4619</p>
+            <AiOutlineMail className="self-center text-2xl mb-3" />
             <p>E-mail: eumim@gmail.com</p>
           </Flex>
         </Flex>
