@@ -19,3 +19,12 @@
   }
 }
 
+@layer components {
+  figure > span > img {
+    filter: blur(0) !important;
+  }
+  .overimage {
+    background: radial-gradient(ellipse at center, transparent, black);
+  }
+}
+
