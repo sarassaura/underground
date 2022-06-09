@@ -26,7 +26,7 @@ function ModalComponent({ isOpening, onClosing, srcing }: ModalTypes) {
       isOpen={isOpening}
       onClose={onClosing}
       size={['xl', '2xl', '3xl', '5xl']}
-      motionPreset="slideInRight"
+      motionPreset="scale"
       isCentered
       preserveScrollBarGap
       blockScrollOnMount
