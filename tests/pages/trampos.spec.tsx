@@ -3,6 +3,6 @@ import Trampos from '../../pages/trampos'
 
 test('cooler', () => {
   const { getByText } = render(<Trampos />)
-  expect(getByText('T')).toBeInTheDocument()
+  expect(getByText('Trampos')).toBeInTheDocument()
 })
 export default test
