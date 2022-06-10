@@ -16,6 +16,7 @@ interface ModalTypes {
   srcing: string
   titling: string
   alting: string
+  bluring: string
 }
 
 function ModalComponent({
@@ -24,6 +25,7 @@ function ModalComponent({
   srcing,
   titling,
   alting,
+  bluring,
 }: ModalTypes) {
   const ChakraImage = chakra(Image, {
     shouldForwardProp: (prop) =>
@@ -35,6 +37,8 @@ function ModalComponent({
         'priority',
         'layout',
         'objectFit',
+        'placeholder',
+        'blurDataURL',
       ].includes(prop),
   })
   return (
@@ -43,6 +47,7 @@ function ModalComponent({
       onClose={onClosing}
       size={['xl', '2xl', '3xl', '5xl']}
       motionPreset="scale"
+      allowPinchZoom
       preserveScrollBarGap
       blockScrollOnMount
     >
@@ -68,6 +73,8 @@ function ModalComponent({
               alt={`image ${alting}`}
               key={`key ${alting}`}
               id={`id ${alting}`}
+              placeholder="blur"
+              blurDataURL={bluring}
               layout="fill"
               objectFit="contain"
             />

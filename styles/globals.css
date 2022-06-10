@@ -23,6 +23,8 @@
   img {
     filter: blur(0) !important;
     border-radius: 1rem !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
   }
   .overimage {
     border-radius: 0.8rem !important;

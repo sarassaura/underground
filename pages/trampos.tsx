@@ -7,11 +7,21 @@ import {
   Box,
 } from '@chakra-ui/react'
 import Image from 'next/image'
+import { useRef } from 'react'
 import ModalComponent from '../components/modal'
 import { Imagine, RootObject } from '../interfaces/typings'
 import blurDataURLi from '../utils/blurhash'
 
+interface ModalProps {
+  srcModalProp: string
+  imageNameProp: string
+  srcBlurProp: string
+}
+
 function Trampos(posts: Imagine) {
+  const srcModal = useRef('/pai.webp')
+  const imageName = useRef('title')
+  const srcBlur = useRef('anything')
   const { isOpen, onOpen, onClose } = useDisclosure()
   const ChakraImage = chakra(Image, {
     shouldForwardProp: (prop) =>
@@ -26,6 +36,16 @@ function Trampos(posts: Imagine) {
         'objectFit',
       ].includes(prop),
   })
+  function OnClickModal({
+    srcModalProp,
+    imageNameProp,
+    srcBlurProp,
+  }: ModalProps) {
+    srcModal.current = srcModalProp
+    imageName.current = imageNameProp
+    srcBlur.current = srcBlurProp
+    onOpen()
+  }
   return (
     <Flex
       width="100%"
@@ -48,11 +68,23 @@ function Trampos(posts: Imagine) {
         {posts.results!.map((dog, index) => (
           <span
             key={`key prop: ${dog.id}`}
-            className="justify-center w-fit h-fit flex mb-3"
+            className="justify-center w-fit flex mb-3 break-inside-avoid"
           >
             <span
-              onClick={onOpen}
-              onKeyUp={onOpen}
+              onClick={() =>
+                OnClickModal({
+                  srcModalProp: dog.urls.regular,
+                  imageNameProp: dog.id,
+                  srcBlurProp: dog.real_hash,
+                })
+              }
+              onKeyUp={() =>
+                OnClickModal({
+                  srcModalProp: dog.urls.regular,
+                  imageNameProp: dog.id,
+                  srcBlurProp: dog.real_hash,
+                })
+              }
               role="button"
               tabIndex={index}
               className="flex relative"
@@ -75,9 +107,10 @@ function Trampos(posts: Imagine) {
       <ModalComponent
         isOpening={isOpen}
         onClosing={onClose}
-        titling="title"
-        alting="007"
-        srcing="/pai.webp"
+        titling={imageName.current}
+        alting={imageName.current}
+        srcing={srcModal.current}
+        bluring={srcBlur.current}
       />
     </Flex>
   )
