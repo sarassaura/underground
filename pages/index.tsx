@@ -1,6 +1,7 @@
 import Facts from '../components/facts'
 import Features from '../components/features'
 import Hero from '../components/hero'
+import Testimonials from '../components/testimonials'
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <Features />
       <Facts />
+      <Testimonials/>
     </>
   )
 }

@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import Fonts from '../styles/fonts'
 import theme from '../styles/theme'
 import Layout from '../components/layout'
+import '@splidejs/react-splide/css/sea-green'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

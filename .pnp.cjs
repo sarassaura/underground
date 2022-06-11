@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:11.9.0"],\
             ["@emotion/styled", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:11.8.1"],\
             ["@jest/globals", "npm:28.1.0"],\
+            ["@splidejs/react-splide", "npm:0.7.8"],\
             ["@swc/core", "npm:1.2.194"],\
             ["@swc/jest", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.2.21"],\
             ["@testing-library/dom", "npm:8.13.0"],\
@@ -5227,6 +5228,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@sinonjs/fake-timers", "npm:9.1.2"],\
             ["@sinonjs/commons", "npm:1.8.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@splidejs/react-splide", [\
+        ["npm:0.7.8", {\
+          "packageLocation": "./.yarn/cache/@splidejs-react-splide-npm-0.7.8-a77f8825be-73cbcb2427.zip/node_modules/@splidejs/react-splide/",\
+          "packageDependencies": [\
+            ["@splidejs/react-splide", "npm:0.7.8"],\
+            ["@splidejs/splide", "npm:4.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@splidejs/splide", [\
+        ["npm:4.0.7", {\
+          "packageLocation": "./.yarn/cache/@splidejs-splide-npm-4.0.7-e823ee1ee5-0e95bbb59d.zip/node_modules/@splidejs/splide/",\
+          "packageDependencies": [\
+            ["@splidejs/splide", "npm:4.0.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11713,6 +11733,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/react", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:11.9.0"],\
             ["@emotion/styled", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:11.8.1"],\
             ["@jest/globals", "npm:28.1.0"],\
+            ["@splidejs/react-splide", "npm:0.7.8"],\
             ["@swc/core", "npm:1.2.194"],\
             ["@swc/jest", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.2.21"],\
             ["@testing-library/dom", "npm:8.13.0"],\

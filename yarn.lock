@@ -2902,6 +2902,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@splidejs/react-splide@npm:^0.7.8":
+  version: 0.7.8
+  resolution: "@splidejs/react-splide@npm:0.7.8"
+  dependencies:
+    "@splidejs/splide": ^4.0.7
+  checksum: 73cbcb242713e3cf3cd11c263e7d697137bd77fb4f6f8cd06cf8b23e56dfe4ff3fd7f57e1bb4bc8c0b8e7f7653fc1e3e3fcd3d48eba3013d813740a55f9364ce
+  languageName: node
+  linkType: hard
+
+"@splidejs/splide@npm:^4.0.7":
+  version: 4.0.7
+  resolution: "@splidejs/splide@npm:4.0.7"
+  checksum: 0e95bbb59d4d55302851c652adfe07c661addd2ba4e1b495e037df37db52aa3dcb269cea36eb5d6446c4dbb781c6228ef32884c0f476d9d21ccead2dc197f36c
+  languageName: node
+  linkType: hard
+
 "@swc/core-android-arm-eabi@npm:1.2.194":
   version: 1.2.194
   resolution: "@swc/core-android-arm-eabi@npm:1.2.194"
@@ -8238,6 +8254,7 @@ __metadata:
     "@emotion/react": ^11
     "@emotion/styled": ^11
     "@jest/globals": ^28.1.0
+    "@splidejs/react-splide": ^0.7.8
     "@swc/core": ^1.2.194
     "@swc/jest": ^0.2.21
     "@testing-library/dom": ^8.13.0
