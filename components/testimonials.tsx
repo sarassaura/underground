@@ -9,7 +9,7 @@ function Testimonials() {
     <Splide
       options={{
         width: '100%',
-        autoHeight: true,
+        fixedHeight: '200px',
         rewind: true,
         perPage: 4,
         gap: 10,
@@ -41,15 +41,19 @@ function Testimonials() {
             bgColor={useColorModeValue('darkGreen', 'lightPurple')}
             justify="center"
             align="center"
-            paddingY={3}
+            position="relative"
+            padding={3}
+            className="!overflow-visible"
           >
-            <MdFaceRetouchingNatural className="text-8xl mr-3" />
-            <Flex direction="column">
-              <Heading fontSize="3xl">{item.name}</Heading>
-              <Heading fontSize="xl" marginBottom={5}>
+            <MdFaceRetouchingNatural className="text-8xl" />
+            <Flex direction="column" width="100%">
+              <Heading fontSize={['3xl', '2xl', '2xl', 'xl']}>
+                {item.name}
+              </Heading>
+              <Heading fontSize={['xl', 'lg', 'md', 'sm']} marginBottom={5}>
                 {item.job}
               </Heading>
-              <Text fontSize="md" flexWrap="wrap">
+              <Text fontSize={['lg', 'lg', 'lg', 'lg']} flexWrap="wrap">
                 &quot;{item.commentary}&quot;
               </Text>
             </Flex>
