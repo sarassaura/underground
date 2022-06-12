@@ -1,14 +1,18 @@
-import { Flex, Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import { MdFaceRetouchingNatural } from 'react-icons/md'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
+import { textTestimonials } from '../constants/text'
 
 function Testimonials() {
+  const testimonial = textTestimonials()
   return (
     <Splide
-      className="w-full"
       options={{
+        width: '100%',
+        autoHeight: true,
         rewind: true,
-        perPage: 5,
+        perPage: 4,
+        gap: 10,
         breakpoints: {
           1536: {
             perpage: 5,
@@ -22,117 +26,36 @@ function Testimonials() {
           768: {
             perPage: 2,
           },
-          480: {
+          526: {
             perPage: 1,
           },
         },
       }}
       aria-label="Testimonials"
     >
-      <SplideSlide>
-        <Flex
-          width="100%"
-          height={['200px', '200px', '150px', '150px']}
-          bgColor="green"
-          justify="center"
-          align="center"
-        >
-          <MdFaceRetouchingNatural className="text-8xl mr-3" />
-          <Flex direction="column">
-            <Heading fontSize="3xl">Sarah Lins</Heading>
-            <Heading fontSize="xl" marginBottom={5}>
-              Engenheira
-            </Heading>
-            <Text fontSize="md" flexWrap="wrap">
-              &quot;Comentário legal sobre produto&quot;
-            </Text>
+      {testimonial.map((item) => (
+        <SplideSlide key={item.name}>
+          <Flex
+            width="100%"
+            height="100%"
+            bgColor={useColorModeValue('darkGreen', 'lightPurple')}
+            justify="center"
+            align="center"
+            paddingY={3}
+          >
+            <MdFaceRetouchingNatural className="text-8xl mr-3" />
+            <Flex direction="column">
+              <Heading fontSize="3xl">{item.name}</Heading>
+              <Heading fontSize="xl" marginBottom={5}>
+                {item.job}
+              </Heading>
+              <Text fontSize="md" flexWrap="wrap">
+                &quot;{item.commentary}&quot;
+              </Text>
+            </Flex>
           </Flex>
-        </Flex>
-      </SplideSlide>
-
-      <SplideSlide>
-        <Flex
-          width="100%"
-          height={['200px', '200px', '150px', '150px']}
-          bgColor="green"
-          justify="center"
-          align="center"
-        >
-          <MdFaceRetouchingNatural className="text-8xl mr-3" />
-          <Flex direction="column">
-            <Heading fontSize="3xl">Sarah Lins</Heading>
-            <Heading fontSize="xl" marginBottom={5}>
-              Engenheira
-            </Heading>
-            <Text fontSize="md" flexWrap="wrap">
-              &quot;Comentário legal sobre produto&quot;
-            </Text>
-          </Flex>
-        </Flex>
-      </SplideSlide>
-
-      <SplideSlide>
-        <Flex
-          width="100%"
-          height={['200px', '200px', '150px', '150px']}
-          bgColor="green"
-          justify="center"
-          align="center"
-        >
-          <MdFaceRetouchingNatural className="text-8xl mr-3" />
-          <Flex direction="column">
-            <Heading fontSize="3xl">Sarah Lins</Heading>
-            <Heading fontSize="xl" marginBottom={5}>
-              Engenheira
-            </Heading>
-            <Text fontSize="md" flexWrap="wrap">
-              &quot;Comentário legal sobre produto&quot;
-            </Text>
-          </Flex>
-        </Flex>
-      </SplideSlide>
-
-      <SplideSlide>
-        <Flex
-          width="100%"
-          height={['200px', '200px', '150px', '150px']}
-          bgColor="green"
-          justify="center"
-          align="center"
-        >
-          <MdFaceRetouchingNatural className="text-8xl mr-3" />
-          <Flex direction="column">
-            <Heading fontSize="3xl">Sarah Lins</Heading>
-            <Heading fontSize="xl" marginBottom={5}>
-              Engenheira
-            </Heading>
-            <Text fontSize="md" flexWrap="wrap">
-              &quot;Comentário legal sobre produto&quot;
-            </Text>
-          </Flex>
-        </Flex>
-      </SplideSlide>
-
-      <SplideSlide>
-        <Flex
-          width="100%"
-          height={['200px', '200px', '150px', '150px']}
-          bgColor="green"
-          justify="center"
-          align="center"
-        >
-          <MdFaceRetouchingNatural className="text-8xl mr-3" />
-          <Flex direction="column">
-            <Heading fontSize="3xl">Sarah Lins</Heading>
-            <Heading fontSize="xl" marginBottom={5}>
-              Engenheira
-            </Heading>
-            <Text fontSize="md" flexWrap="wrap">
-              &quot;Comentário legal sobre produto&quot;
-            </Text>
-          </Flex>
-        </Flex>
-      </SplideSlide>
+        </SplideSlide>
+      ))}
     </Splide>
   )
 }

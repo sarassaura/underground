@@ -26,4 +26,34 @@ function textMenu() {
   ]
 }
 
-export { textFeatures, textMenu }
+function textTestimonials() {
+  return [
+    {
+      name: 'Sarah Lins',
+      job: 'Engenheira',
+      commentary: 'Comentário legal sobre produto',
+    },
+    {
+      name: 'Pegasus Sunshine',
+      job: 'Artista',
+      commentary: 'Comentário nota 10',
+    },
+    {
+      name: 'Maya Raven',
+      job: 'Dolar',
+      commentary: 'Comentário maravilhoso',
+    },
+    {
+      name: 'Dalila Rodriguez',
+      job: 'Médica Veterinária',
+      commentary: 'Comentarei denovo, concerteza',
+    },
+    {
+      name: 'Lisa Adams',
+      job: 'Presidente',
+      commentary: 'Comentário melhor que já vi',
+    },
+  ]
+}
+
+export { textFeatures, textMenu, textTestimonials }
