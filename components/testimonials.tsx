@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
+import { Flex, Heading, Text, useColorModeValue, Icon } from '@chakra-ui/react'
 import { MdFaceRetouchingNatural } from 'react-icons/md'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { textTestimonials } from '../constants/text'
@@ -7,7 +7,6 @@ function Testimonials() {
   const testimonial = textTestimonials()
   return (
     <Splide
-      className="bg-[#39b2e0]"
       options={{
         width: '100%',
         fixedHeight: '180px',
@@ -21,7 +20,7 @@ function Testimonials() {
           1280: {
             perPage: 3,
           },
-          1002: {
+          990: {
             perPage: 2,
           },
           768: {
@@ -51,10 +50,26 @@ function Testimonials() {
               justify={['flex-start', 'center', 'flex-start', 'flex-start']}
               mb={5}
             >
-              <MdFaceRetouchingNatural className="text-6xl mr-2" />
+              <Icon
+                as={MdFaceRetouchingNatural}
+                className="text-6xl mr-2"
+                color={useColorModeValue('crimson', 'white')}
+              />
               <Flex direction="column">
-                <Heading fontSize={['xl']}>{item.name}</Heading>
-                <Heading fontSize={['md']}>{item.job}</Heading>
+                <Heading
+                  fontSize={['xl']}
+                  fontFamily="Arial"
+                  color={useColorModeValue('crimson', 'white')}
+                >
+                  {item.name}
+                </Heading>
+                <Text
+                  fontSize={['sm']}
+                  as="i"
+                  color={useColorModeValue('crimson', 'white')}
+                >
+                  {item.job}
+                </Text>
               </Flex>
             </Flex>
             <Text
