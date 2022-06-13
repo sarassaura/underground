@@ -7,24 +7,25 @@ function Testimonials() {
   const testimonial = textTestimonials()
   return (
     <Splide
+      className="bg-[#39b2e0]"
       options={{
         width: '100%',
-        fixedHeight: '200px',
+        fixedHeight: '180px',
         rewind: true,
-        perPage: 4,
+        perPage: 3,
         gap: 10,
         breakpoints: {
           1536: {
-            perpage: 5,
+            perpage: 4,
           },
           1280: {
-            perPage: 4,
-          },
-          1002: {
             perPage: 3,
           },
-          768: {
+          1002: {
             perPage: 2,
+          },
+          768: {
+            perPage: 1,
           },
           526: {
             perPage: 1,
@@ -38,25 +39,36 @@ function Testimonials() {
           <Flex
             width="100%"
             height="100%"
-            bgColor={useColorModeValue('darkGreen', 'lightPurple')}
-            justify="center"
-            align="center"
+            bgColor={useColorModeValue('lightYellow', 'lightPurple')}
+            justify="flex-start"
             position="relative"
-            padding={3}
-            className="!overflow-visible"
+            padding={5}
+            direction={['column', 'row', 'column', 'column']}
           >
-            <MdFaceRetouchingNatural className="text-8xl" />
-            <Flex direction="column" width="100%">
-              <Heading fontSize={['3xl', '2xl', '2xl', 'xl']}>
-                {item.name}
-              </Heading>
-              <Heading fontSize={['xl', 'lg', 'md', 'sm']} marginBottom={5}>
-                {item.job}
-              </Heading>
-              <Text fontSize={['lg', 'lg', 'lg', 'lg']} flexWrap="wrap">
-                &quot;{item.commentary}&quot;
-              </Text>
+            <Flex
+              width="100%"
+              alignItems="center"
+              justify={['flex-start', 'center', 'flex-start', 'flex-start']}
+              mb={5}
+            >
+              <MdFaceRetouchingNatural className="text-6xl mr-2" />
+              <Flex direction="column">
+                <Heading fontSize={['xl']}>{item.name}</Heading>
+                <Heading fontSize={['md']}>{item.job}</Heading>
+              </Flex>
             </Flex>
+            <Text
+              fontSize={['lg', 'md']}
+              flexWrap="wrap"
+              alignContent={['start', 'center', 'start', 'start']}
+              textAlign={['start', 'center', 'center', 'start']}
+              justifyContent={['start', 'center', 'center', 'start']}
+              display="flex"
+              marginX="1.5"
+              width="100%"
+            >
+              &quot;{item.commentary}&quot;
+            </Text>
           </Flex>
         </SplideSlide>
       ))}
