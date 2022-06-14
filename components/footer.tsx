@@ -1,6 +1,8 @@
 import { Flex, useColorModeValue } from '@chakra-ui/react'
+import { textFoot } from '../constants/text'
 
 function Footer() {
+  const textFooter = textFoot()
   return (
     <Flex
       as="footer"
@@ -11,7 +13,7 @@ function Footer() {
       bgColor={useColorModeValue('lightRed', 'darkBlue')}
       shrink={0}
     >
-      @It&apos;s me!
+      {textFooter}
     </Flex>
   )
 }

@@ -114,6 +114,10 @@ function textLogo() {
   return 'Me'
 }
 
+function textFoot() {
+  return `@It's me!`
+}
+
 export {
   textFeatures,
   textMenu,
@@ -124,4 +128,5 @@ export {
   textTrampos,
   textContato,
   textLogo,
+  textFoot,
 }
