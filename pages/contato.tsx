@@ -8,8 +8,10 @@ import {
   Textarea,
 } from '@chakra-ui/react'
 import Contact from '../components/contact'
+import { textContato } from '../constants/text'
 
 function Contato() {
+  const textGenerics = textContato()
   return (
     <Flex
       width="100%"
@@ -19,8 +21,8 @@ function Contato() {
       direction="column"
       paddingY={5}
     >
-      <Heading>Contato</Heading>
-      <Text marginY={5}>Se quiser saber como me chamar, me chame de deuso</Text>
+      <Heading>{textGenerics.title}</Heading>
+      <Text marginY={5}>{textGenerics.phrase}</Text>
       <Flex
         width={['90%', '90%', '90%', '80%']}
         minH="fit-content"
@@ -34,7 +36,7 @@ function Contato() {
           marginY={[4, 4, 0, 0]}
         >
           <Heading fontSize="2xl" marginBottom={3}>
-            Chama
+            {textGenerics.subtitle}
           </Heading>
           <Contact />
         </Flex>

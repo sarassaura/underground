@@ -18,11 +18,12 @@ import Link from 'next/link'
 import Social from './social'
 import ThemeButton from './themeButton'
 import Logo from '../public/logo'
-import { textMenu } from '../constants/text'
+import { textMenu, textLogo } from '../constants/text'
 
 function MenuComponent() {
   const { colorMode } = useColorMode()
   const itemName = textMenu()
+  const Logotype = textLogo()
   return (
     <Flex
       width="100%"
@@ -44,7 +45,7 @@ function MenuComponent() {
             }
           >
             <Logo color="#F7F2DA" />
-            <h1 className="text-stone-50">Me</h1>
+            <h1 className="text-stone-50">{Logotype}</h1>
           </Button>
         </ButtonGroup>
       </Link>

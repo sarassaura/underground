@@ -161,8 +161,8 @@ export interface RootObject {
 }
 
 export interface Imagine {
-  total: number
-  total_pages: number
+  total?: number
+  total_pages?: number
   results?: RootObject[]
 }
 
@@ -178,4 +178,10 @@ export interface ModalTypes {
   titling: string
   alting: string
   bluring: string
+}
+
+export interface ModalProps {
+  srcModalProp: string
+  imageNameProp: string
+  srcBlurProp: string
 }

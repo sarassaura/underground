@@ -5,11 +5,10 @@ import {
   ModalHeader,
   ModalBody,
   ModalCloseButton,
-  chakra,
   Flex,
 } from '@chakra-ui/react'
-import Image from 'next/image'
 import { ModalTypes } from '../interfaces/typings'
+import ImageComponent from '../utils/image'
 
 function ModalComponent({
   isOpening,
@@ -19,20 +18,7 @@ function ModalComponent({
   alting,
   bluring,
 }: ModalTypes) {
-  const ChakraImage = chakra(Image, {
-    shouldForwardProp: (prop) =>
-      [
-        'width',
-        'height',
-        'alt',
-        'src',
-        'priority',
-        'layout',
-        'objectFit',
-        'placeholder',
-        'blurDataURL',
-      ].includes(prop),
-  })
+  const ChakraImage = ImageComponent()
   return (
     <Modal
       isOpen={isOpening}

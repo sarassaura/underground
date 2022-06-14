@@ -95,6 +95,25 @@ function textContact() {
   ]
 }
 
+function textTrampos() {
+  return {
+    title: 'Trampos',
+    phrase: 'Nenhum trabalho é ruim, ruim é ter que trabalhar',
+  }
+}
+
+function textContato() {
+  return {
+    title: 'Contato',
+    subtitle: 'Chama',
+    phrase: 'Se quiser saber como me chamar, me chame de deuso',
+  }
+}
+
+function textLogo() {
+  return 'Me'
+}
+
 export {
   textFeatures,
   textMenu,
@@ -102,4 +121,7 @@ export {
   textFacts,
   textHero,
   textContact,
+  textTrampos,
+  textContato,
+  textLogo,
 }
