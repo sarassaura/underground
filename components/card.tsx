@@ -1,9 +1,5 @@
 import { Flex, useColorModeValue } from '@chakra-ui/react'
-
-interface PropsType {
-  title: String
-  text: String
-}
+import { PropsType } from '../interfaces/typings'
 
 function Card({ title, text }: PropsType) {
   return (

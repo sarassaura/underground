@@ -1,3 +1,16 @@
+import {
+  GiSpy,
+  GiPaintBrush,
+  GiPencilRuler,
+  GiArmBandage,
+} from 'react-icons/gi'
+import {
+  AiOutlineMail,
+  AiOutlineWhatsApp,
+  AiOutlinePhone,
+  AiOutlineEnvironment,
+} from 'react-icons/ai'
+
 function textFeatures() {
   return [
     {
@@ -56,4 +69,37 @@ function textTestimonials() {
   ]
 }
 
-export { textFeatures, textMenu, textTestimonials }
+function textFacts() {
+  return [
+    { icon: GiSpy, name: 'Clientes', number: 234 },
+    { icon: GiPencilRuler, name: 'Desenhos', number: 1054 },
+    { icon: GiPaintBrush, name: 'Pinturas', number: 523 },
+    { icon: GiArmBandage, name: 'Tatuagens', number: 132 },
+  ]
+}
+
+function textHero() {
+  return {
+    name: 'Vitor Valentim',
+    slogan: 'From Hero to Zero',
+    brand: 'UnderGround',
+  }
+}
+
+function textContact() {
+  return [
+    { icon: AiOutlineEnvironment, info: 'Endereço: Rua d tal, 3600' },
+    { icon: AiOutlinePhone, info: 'Telefone: +55 11 99123-4563' },
+    { icon: AiOutlineWhatsApp, info: 'Whatsapp: +55 11 99874-4619' },
+    { icon: AiOutlineMail, info: 'E-mail: eumim@gmail.com' },
+  ]
+}
+
+export {
+  textFeatures,
+  textMenu,
+  textTestimonials,
+  textFacts,
+  textHero,
+  textContact,
+}

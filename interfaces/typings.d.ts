@@ -165,3 +165,17 @@ export interface Imagine {
   total_pages: number
   results?: RootObject[]
 }
+
+export interface PropsType {
+  title: String
+  text: String
+}
+
+export interface ModalTypes {
+  isOpening: boolean
+  onClosing: () => void
+  srcing: string
+  titling: string
+  alting: string
+  bluring: string
+}

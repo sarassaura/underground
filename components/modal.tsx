@@ -9,15 +9,7 @@ import {
   Flex,
 } from '@chakra-ui/react'
 import Image from 'next/image'
-
-interface ModalTypes {
-  isOpening: boolean
-  onClosing: () => void
-  srcing: string
-  titling: string
-  alting: string
-  bluring: string
-}
+import { ModalTypes } from '../interfaces/typings'
 
 function ModalComponent({
   isOpening,
