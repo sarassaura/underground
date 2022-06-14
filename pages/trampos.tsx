@@ -19,8 +19,8 @@ function Trampos(posts: Imagine) {
     srcBlurProp,
   }: ModalProps) {
     srcModal.current = srcModalProp
-    imageName.current = imageNameProp
     srcBlur.current = srcBlurProp
+    imageName.current = imageNameProp
     onOpen()
   }
   return (
