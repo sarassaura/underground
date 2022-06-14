@@ -68,12 +68,12 @@ function Trampos(posts: Imagine) {
             >
               <ChakraImage
                 src={dog.urls.thumb}
-                alt={`image out ${index}`}
+                alt={`imageout${dog.id}`}
                 width={210}
                 height={(dog.height / dog.width) * 210}
-                objectFit="fill"
                 placeholder="blur"
                 blurDataURL={dog.real_hash}
+                objectFit="fill"
                 rounded="2xl"
               />
               <span className="absolute h-full w-full overimage" />

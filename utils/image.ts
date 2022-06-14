@@ -5,11 +5,10 @@ function ImageComponent() {
   const ChakraImage = chakra(Image, {
     shouldForwardProp: (prop) =>
       [
+        'src',
+        'alt',
         'width',
         'height',
-        'alt',
-        'src',
-        'priority',
         'placeholder',
         'blurDataURL',
         'objectFit',

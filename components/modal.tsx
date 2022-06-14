@@ -53,8 +53,8 @@ function ModalComponent({
               id={`id ${alting}`}
               placeholder="blur"
               blurDataURL={bluring}
-              layout="fill"
               objectFit="contain"
+              layout="fill"
             />
           </Flex>
         </ModalBody>
