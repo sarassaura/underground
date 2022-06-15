@@ -20,6 +20,8 @@ Environmental variables(.env.local):
 ```bash
 NEXT_PUBLIC_API_KEY_UNSPLASH - Unsplash API
 LD_LIBRARY_PATH=/var/task/node_modules/canvas/build/Release - Canvas
+EMAIL - GMAIL
+PASSWORD - Gerar senha de APP
 ```
 
 ## Deploy your own
