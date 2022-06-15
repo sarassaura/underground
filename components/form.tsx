@@ -5,8 +5,10 @@ import {
   Input,
   Stack,
   Textarea,
+  useDisclosure,
 } from '@chakra-ui/react'
-import { useForm, SubmitHandler } from 'react-hook-form'
+import { SubmitHandler, useForm } from 'react-hook-form'
+import Alert from './alert'
 
 type Inputs = {
   nome: string
@@ -16,13 +18,16 @@ type Inputs = {
 }
 
 function Form() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = (data) =>
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
     fetch('api/mail', { method: 'post', body: JSON.stringify(data) })
+    onOpen()
+  }
   return (
     <Stack as="form" onSubmit={handleSubmit(onSubmit)} spacing={4} width="80%">
       <FormControl isInvalid={!!errors.nome}>
@@ -102,6 +107,7 @@ function Form() {
           <h1>Enviar</h1>
         </Button>
       </FormControl>
+      <Alert open={isOpen} close={onClose} />
     </Stack>
   )
 }
