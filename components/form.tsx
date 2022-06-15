@@ -21,10 +21,10 @@ function Form() {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<Inputs>()
-  // eslint-disable-next-line no-console
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+  const onSubmit: SubmitHandler<Inputs> = (data) =>
+    fetch('api/mail', { method: 'post', body: JSON.stringify(data) })
   return (
-    <Stack as="form" onSubmit={handleSubmit(onSubmit)} spacing={4}>
+    <Stack as="form" onSubmit={handleSubmit(onSubmit)} spacing={4} width="80%">
       <FormControl isInvalid={!!errors.nome}>
         <Input
           type="text"
@@ -33,6 +33,10 @@ function Form() {
           _placeholder={{ opacity: 0.7, color: 'inherit' }}
           {...register('nome', {
             required: 'Campo obrigatório',
+            maxLength: {
+              value: 255,
+              message: 'Muito longo',
+            },
           })}
         />
         <FormErrorMessage>
@@ -47,6 +51,10 @@ function Form() {
           _placeholder={{ opacity: 0.7, color: 'inherit' }}
           {...register('email', {
             required: 'Campo obrigatório',
+            maxLength: {
+              value: 255,
+              message: 'Muito longo',
+            },
           })}
         />
         <FormErrorMessage>
@@ -61,6 +69,10 @@ function Form() {
           _placeholder={{ opacity: 0.7, color: 'inherit' }}
           {...register('telefone', {
             required: 'Campo obrigatório',
+            maxLength: {
+              value: 30,
+              message: 'Muito longo',
+            },
           })}
         />
         <FormErrorMessage>
@@ -75,13 +87,17 @@ function Form() {
           _placeholder={{ opacity: 0.7, color: 'inherit' }}
           {...register('textarea', {
             required: 'Campo obrigatório',
+            maxLength: {
+              value: 2000,
+              message: 'Muito longo',
+            },
           })}
         />
         <FormErrorMessage>
           {errors.textarea && errors.textarea.message}
         </FormErrorMessage>
       </FormControl>
-      <FormControl>
+      <FormControl display="flex" justifyContent="center">
         <Button colorScheme="blue" type="submit" isLoading={isSubmitting}>
           <h1>Enviar</h1>
         </Button>

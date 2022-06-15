@@ -2,12 +2,16 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+  status: string
 }
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ name: 'John Doe' })
+  const body = JSON.parse(req.body)
+  // eslint-disable-next-line no-console
+  console.log(body)
+  res.status(200).json({ status: 'Ok' })
 }
+
