@@ -3,7 +3,7 @@ import { BsWhatsapp } from 'react-icons/bs'
 
 function Whatsapp() {
   return (
-    <Link href="https://wa.me/5511990839227" isExternal>
+    <Link href="https://wa.me/5511990839227" title="Whatsapp" isExternal>
       <Icon
         as={BsWhatsapp}
         position="fixed"

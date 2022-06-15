@@ -1,13 +1,6 @@
-import {
-  Flex,
-  Heading,
-  Text,
-  Input,
-  Stack,
-  Button,
-  Textarea,
-} from '@chakra-ui/react'
+import { Flex, Heading, Text } from '@chakra-ui/react'
 import Contact from '../components/contact'
+import Form from '../components/form'
 import { textContato } from '../constants/text'
 
 function Contato() {
@@ -48,37 +41,7 @@ function Contato() {
           justifyContent="center"
           marginTop={3}
         >
-          <Stack spacing={4}>
-            <Input
-              placeholder="Nome"
-              variant="flushed"
-              _placeholder={{ opacity: 0.7, color: 'inherit' }}
-              isRequired
-            />
-            <Input
-              placeholder="Email"
-              variant="flushed"
-              _placeholder={{ opacity: 0.7, color: 'inherit' }}
-              isRequired
-            />
-            <Input
-              type="tel"
-              placeholder="Telefone"
-              variant="flushed"
-              _placeholder={{ opacity: 0.7, color: 'inherit' }}
-              isRequired
-            />
-            <Textarea
-              placeholder="Escreva pedido aqui"
-              resize="vertical"
-              _placeholder={{ opacity: 0.7, color: 'inherit' }}
-              variant="flushed"
-              isRequired
-            />
-            <Button colorScheme="blue">
-              <h1>Enviar</h1>
-            </Button>
-          </Stack>
+          <Form />
         </Flex>
       </Flex>
     </Flex>
