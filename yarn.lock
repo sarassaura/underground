@@ -3301,6 +3301,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/nodemailer@npm:^6.4.4":
+  version: 6.4.4
+  resolution: "@types/nodemailer@npm:6.4.4"
+  dependencies:
+    "@types/node": "*"
+  checksum: 16ed1bad2cd8471fd3b026471e234da33ba3b65935dc44b31be3145eff7bdb067eb4d08ec4b41d23339b988075299abc1a0c0fe77b99f04ca235827bca95af81
+  languageName: node
+  linkType: hard
+
 "@types/parse-json@npm:^4.0.0":
   version: 4.0.0
   resolution: "@types/parse-json@npm:4.0.0"
@@ -4742,6 +4751,13 @@ __metadata:
   dependencies:
     webidl-conversions: ^7.0.0
   checksum: ddbc1268edf33a8ba02ccc596735ede80375ee0cf124b30d2f05df5b464ba78ef4f49889b6391df4a04954e63d42d5631c7fcf8b1c4f12bc531252977a5f13d5
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.0.1":
+  version: 16.0.1
+  resolution: "dotenv@npm:16.0.1"
+  checksum: f459ffce07b977b7f15d8cc4ee69cdff77d4dd8c5dc8c85d2d485ee84655352c2415f9dd09d42b5b5985ced3be186130871b34e2f3e2569ebc72fbc2e8096792
   languageName: node
   linkType: hard
 
@@ -7309,6 +7325,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nodemailer@npm:^6.7.5":
+  version: 6.7.5
+  resolution: "nodemailer@npm:6.7.5"
+  checksum: d361a107b9eb264856852e32d3deb9bda1f69fdef6087ba20aaf58f98aacf4cd16c3633583ddbc1f23df25ad87c86bcca98511aaadfb447fe35a1e0eca6a7796
+  languageName: node
+  linkType: hard
+
 "nopt@npm:^5.0.0":
   version: 5.0.0
   resolution: "nopt@npm:5.0.0"
@@ -8272,6 +8295,7 @@ __metadata:
     "@testing-library/user-event": ^14.2.0
     "@types/jest": ^27.5.1
     "@types/node": ^17.0.36
+    "@types/nodemailer": ^6.4.4
     "@types/react": latest
     "@types/testing-library__jest-dom": ^5.14.3
     "@typescript-eslint/eslint-plugin": latest
@@ -8280,6 +8304,7 @@ __metadata:
     babel-jest: ^28.1.0
     blurhash: ^1.1.5
     canvas: ^2.9.1
+    dotenv: ^16.0.1
     eslint: ^7.32.0 || ^8.2.0
     eslint-config-airbnb: latest
     eslint-config-prettier: ^8.5.0
@@ -8293,6 +8318,7 @@ __metadata:
     jest: ^28.1.0
     jest-environment-jsdom: ^28.1.0
     next: latest
+    nodemailer: ^6.7.5
     postcss: ^8.4.5
     prettier: ^2.5.1
     prettier-plugin-tailwindcss: ^0.1.1
