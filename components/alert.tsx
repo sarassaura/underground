@@ -32,7 +32,7 @@ function Alert({ open, close }: { open: boolean; close: () => void }) {
           my={3}
           color="green.300"
         />
-        <AlertDialogBody>
+        <AlertDialogBody my={3}>
           Recebemos sua mensagem e logo responderemos!
         </AlertDialogBody>
       </AlertDialogContent>

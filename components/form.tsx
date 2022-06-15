@@ -25,7 +25,10 @@ function Form() {
     formState: { errors, isSubmitting },
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    fetch('api/mail', { method: 'post', body: JSON.stringify(data) })
+    fetch('api/mail', {
+      method: 'post',
+      body: JSON.stringify(data),
+    })
     onOpen()
   }
   return (
