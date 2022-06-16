@@ -2,17 +2,23 @@ import { Flex, Heading, Text } from '@chakra-ui/react'
 import Contact from '../components/contact'
 import Form from '../components/form'
 import { textContato } from '../constants/text'
+import variants from '../helpers/variants'
+import MotionFlex from '../utils/flex'
 
 function Contato() {
   const textGenerics = textContato()
   return (
-    <Flex
+    <MotionFlex
       width="100%"
       minH="fit-content"
       justify="center"
       align="center"
       direction="column"
       paddingY={5}
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants}
     >
       <Heading>{textGenerics.title}</Heading>
       <Text marginY={5}>{textGenerics.phrase}</Text>
@@ -44,7 +50,7 @@ function Contato() {
           <Form />
         </Flex>
       </Flex>
-    </Flex>
+    </MotionFlex>
   )
 }
 

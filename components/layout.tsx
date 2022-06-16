@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
 import Footer from './footer'
@@ -17,7 +18,7 @@ function Layout({ children }: LayoutProps) {
       </Head>
       <main className="flex min-h-fit flex-col items-center grow shrink-0 basis-auto">
         <MenuComponent />
-        {children}
+        <AnimatePresence>{children}</AnimatePresence>
         <Whatsapp />
       </main>
       <Footer />
