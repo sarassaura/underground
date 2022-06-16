@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'framer-motion'
 import { ChakraProvider } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 import '../styles/globals.css'
@@ -6,12 +7,14 @@ import theme from '../styles/theme'
 import Layout from '../components/layout'
 import '@splidejs/react-splide/css/sea-green'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
       <Layout>
-        <Component {...pageProps} />
+        <AnimatePresence exitBeforeEnter initial>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
       </Layout>
     </ChakraProvider>
   )
