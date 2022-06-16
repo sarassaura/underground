@@ -22,6 +22,7 @@ function Form() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => {
@@ -29,6 +30,7 @@ function Form() {
       method: 'post',
       body: JSON.stringify(data),
     })
+    reset()
     onOpen()
   }
   return (
