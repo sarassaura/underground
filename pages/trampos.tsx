@@ -102,7 +102,13 @@ function Trampos(posts: Imagine) {
 export async function getStaticProps() {
   const AccessKey = process.env.NEXT_PUBLIC_API_KEY_UNSPLASH
   const res = await fetch(
-    `https://api.unsplash.com/search/photos?page=1&per_page=30&query=tattoo&client_id=${AccessKey}`
+    `https://api.unsplash.com/search/photos?page=1&per_page=30&query=tattoo&client_id=${AccessKey}`,
+    {
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        Accept: 'application/json',
+      },
+    }
   )
   const posts: Imagine = await res.json()
   const tempPosts: RootObject[] = []
