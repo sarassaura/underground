@@ -2,10 +2,9 @@ import { Flex, Heading, Stack, Icon } from '@chakra-ui/react'
 import { textFacts } from '../constants/text'
 
 function Facts() {
-  const itemName = textFacts()
   return (
     <Stack marginY={5} direction="row" width="100%">
-      {itemName.map((item) => (
+      {textFacts.map((item) => (
         <Flex
           direction="column"
           justify="center"

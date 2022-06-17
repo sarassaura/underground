@@ -22,8 +22,6 @@ import { textMenu, textLogo } from '../constants/text'
 
 function MenuComponent() {
   const { colorMode } = useColorMode()
-  const itemName = textMenu()
-  const Logotype = textLogo()
   return (
     <Flex
       width="100%"
@@ -45,13 +43,13 @@ function MenuComponent() {
             }
           >
             <Logo color="#F7F2DA" />
-            <h1 className="text-stone-50">{Logotype}</h1>
+            <h1 className="text-stone-50">{textLogo}</h1>
           </Button>
         </ButtonGroup>
       </Link>
       <Hide below="md">
         <ButtonGroup gap="1">
-          {itemName.map((item) => (
+          {textMenu.map((item) => (
             <Link href={`/${item.route}`} key={item.route}>
               <Button
                 variant={colorMode === 'dark' ? 'solid' : 'ghost'}
@@ -78,7 +76,7 @@ function MenuComponent() {
               variant="outline"
             />
             <MenuList>
-              {itemName.map((item) => (
+              {textMenu.map((item) => (
                 <Link href={`/${item.route}`} key={item.route}>
                   <MenuItem className="uppercase" key={item.name}>
                     {item.name}

@@ -3,7 +3,6 @@ import { textFeatures } from '../constants/text'
 import Card from './card'
 
 function Features() {
-  const itemsName = textFeatures()
   return (
     <Stack
       width="90%"
@@ -13,7 +12,7 @@ function Features() {
       spacing="24px"
       py="10"
     >
-      {itemsName.map((item) => (
+      {textFeatures.map((item) => (
         <Card title={item.title} text={item.text} key={item.id} />
       ))}
     </Stack>

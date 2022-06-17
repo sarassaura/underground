@@ -2,7 +2,6 @@ import { Flex, Heading, useColorModeValue } from '@chakra-ui/react'
 import { textHero } from '../constants/text'
 
 function Hero() {
-  const itemText = textHero()
   return (
     <Flex
       width="100%"
@@ -15,9 +14,9 @@ function Hero() {
       as="header"
     >
       <Heading position="absolute" left="0%" top="0%" className="m-5">
-        {itemText.name}
+        {textHero.name}
       </Heading>
-      <Heading position="absolute">{itemText.slogan}</Heading>
+      <Heading position="absolute">{textHero.slogan}</Heading>
       <Flex
         width="100%"
         height="100%"
@@ -27,9 +26,9 @@ function Hero() {
         clipPath="polygon(calc(50% + 10vw) 0%, calc(50% - 10vw) 100%, 100% 100%, 100% 0%)"
       >
         <Heading position="absolute" right="0%" bottom="0%" className="m-5">
-          {itemText.brand}
+          {textHero.brand}
         </Heading>
-        <Heading>{itemText.slogan}</Heading>
+        <Heading>{textHero.slogan}</Heading>
       </Flex>
     </Flex>
   )

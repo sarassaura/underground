@@ -6,7 +6,6 @@ import variants from '../helpers/variants'
 import MotionFlex from '../utils/flex'
 
 function Contato() {
-  const textGenerics = textContato()
   return (
     <MotionFlex
       width="100%"
@@ -20,8 +19,8 @@ function Contato() {
       exit="exit"
       variants={variants}
     >
-      <Heading>{textGenerics.title}</Heading>
-      <Text marginY={5}>{textGenerics.phrase}</Text>
+      <Heading>{textContato.title}</Heading>
+      <Text marginY={5}>{textContato.phrase}</Text>
       <Flex
         width={['90%', '90%', '90%', '80%']}
         minH="fit-content"
@@ -35,7 +34,7 @@ function Contato() {
           marginY={[4, 4, 0, 0]}
         >
           <Heading fontSize="2xl" marginBottom={3}>
-            {textGenerics.subtitle}
+            {textContato.subtitle}
           </Heading>
           <Contact />
         </Flex>

@@ -4,7 +4,6 @@ import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { textTestimonials } from '../constants/text'
 
 function Testimonials() {
-  const testimonial = textTestimonials()
   return (
     <Splide
       options={{
@@ -33,7 +32,7 @@ function Testimonials() {
       }}
       aria-label="Testimonials"
     >
-      {testimonial.map((item) => (
+      {textTestimonials.map((item) => (
         <SplideSlide key={item.name}>
           <Flex
             width="100%"

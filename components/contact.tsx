@@ -3,10 +3,9 @@ import React from 'react'
 import { textContact } from '../constants/text'
 
 function Contact() {
-  const itemCall = textContact()
   return (
     <Flex direction="column">
-      {itemCall.map((item) => (
+      {textContact.map((item) => (
         <React.Fragment key={item.info}>
           <Icon as={item.icon} className="self-center text-2xl mb-3" />
           <Text>{item.info}</Text>

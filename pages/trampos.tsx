@@ -6,15 +6,13 @@ import variants from '../helpers/variants'
 import { Imagine, RootObject, ModalProps } from '../interfaces/typings'
 import blurDataURLi from '../utils/blurhash'
 import MotionFlex from '../utils/flex'
-import ImageComponent from '../utils/image'
+import ChakraImage from '../utils/image'
 
 function Trampos(posts: Imagine) {
   const srcModal = useRef('/pai.webp')
   const imageName = useRef('title')
   const srcBlur = useRef('anything')
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const ChakraImage = ImageComponent()
-  const textGeneric = textTrampos()
   function OnClickModal({
     srcModalProp,
     imageNameProp,
@@ -38,9 +36,9 @@ function Trampos(posts: Imagine) {
       exit="exit"
       variants={variants}
     >
-      <Heading>{textGeneric.title}</Heading>
+      <Heading>{textTrampos.title}</Heading>
       <Text marginTop={3} marginBottom={8}>
-        {textGeneric.phrase}
+        {textTrampos.phrase}
       </Text>
       <Box
         w="fit-content"

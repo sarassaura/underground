@@ -8,7 +8,7 @@ import {
   Flex,
 } from '@chakra-ui/react'
 import { ModalTypes } from '../interfaces/typings'
-import ImageComponent from '../utils/image'
+import ChakraImage from '../utils/image'
 
 function ModalComponent({
   isOpening,
@@ -18,7 +18,6 @@ function ModalComponent({
   alting,
   bluring,
 }: ModalTypes) {
-  const ChakraImage = ImageComponent()
   return (
     <Modal
       isOpen={isOpening}
