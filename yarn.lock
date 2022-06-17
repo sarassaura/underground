@@ -2161,6 +2161,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@corex/deepmerge@npm:^4.0.14":
+  version: 4.0.22
+  resolution: "@corex/deepmerge@npm:4.0.22"
+  checksum: 095772500fa7e186e36af4788ca504e66a2ae85a94f374bfe41621f6ed462e175651d1242fb3b80d91f578e72cbd26527870cd346774aeccae1a901fffcb5bb6
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -2732,7 +2739,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:12.1.6":
+"@next/env@npm:12.1.6, @next/env@npm:^12.1.6":
   version: 12.1.6
   resolution: "@next/env@npm:12.1.6"
   checksum: e6a4f189f0d653d13dc7ad510f6c9d2cf690bfd9e07c554bd501b840f8dabc3da5adcab874b0bc01aab86c3647cff4fb84692e3c3b28125af26f0b05cd4c7fcf
@@ -7213,6 +7220,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-seo@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "next-seo@npm:5.4.0"
+  peerDependencies:
+    next: ^8.1.1-canary.54 || >=9.0.0
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: fe19b4f7237111d6e8c2f3e9128946480f1b6e2d7ffab5902e8a4a1114721142daa187175334fa7d6da25605658e63cd8c6e3a68a9d9678fd7fbd4fb4b061391
+  languageName: node
+  linkType: hard
+
+"next-sitemap@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "next-sitemap@npm:3.0.5"
+  dependencies:
+    "@corex/deepmerge": ^4.0.14
+    minimist: ^1.2.6
+  peerDependencies:
+    "@next/env": "*"
+    next: "*"
+  bin:
+    next-sitemap: bin/next-sitemap.mjs
+    next-sitemap-cjs: bin/next-sitemap.cjs
+  checksum: 6c6a74917d8fe43e1e7043fdd993d6e4069c0e84c2548c6689e9922314fec704c9e60246fcc462d298037278bc03542d8e0181ee2e0731dd9ebc77e7953042e7
+  languageName: node
+  linkType: hard
+
 "next@npm:latest":
   version: 12.1.6
   resolution: "next@npm:12.1.6"
@@ -8286,6 +8320,7 @@ __metadata:
     "@emotion/react": ^11
     "@emotion/styled": ^11
     "@jest/globals": ^28.1.0
+    "@next/env": ^12.1.6
     "@splidejs/react-splide": ^0.7.8
     "@swc/core": ^1.2.194
     "@swc/jest": ^0.2.21
@@ -8318,6 +8353,8 @@ __metadata:
     jest: ^28.1.0
     jest-environment-jsdom: ^28.1.0
     next: latest
+    next-seo: ^5.4.0
+    next-sitemap: ^3.0.5
     nodemailer: ^6.7.5
     postcss: ^8.4.5
     prettier: ^2.5.1

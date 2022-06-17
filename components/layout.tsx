@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import React from 'react'
 import Footer from './footer'
 import MenuComponent from './menu'
@@ -11,10 +10,6 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Head>
-        <title>Underground</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main className="flex min-h-fit flex-col items-center grow shrink-0 basis-auto">
         <MenuComponent />
         {children}
