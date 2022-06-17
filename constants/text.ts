@@ -10,6 +10,7 @@ import {
   AiOutlinePhone,
   AiOutlineEnvironment,
 } from 'react-icons/ai'
+import { BsFillCheckCircleFill } from 'react-icons/bs'
 
 const textFeatures = [
   {
@@ -94,6 +95,12 @@ const textContato = {
   phrase: 'Se quiser saber como me chamar, me chame de deuso',
 }
 
+const textAlert = {
+  title: 'Enviado com sucesso!',
+  body: 'Recebemos sua mensagem e logo responderemos!',
+  icon: BsFillCheckCircleFill,
+}
+
 const textLogo = 'Me'
 
 const textFoot = `@It's me!`
@@ -109,4 +116,5 @@ export {
   textContato,
   textLogo,
   textFoot,
+  textAlert,
 }

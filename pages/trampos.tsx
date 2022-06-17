@@ -2,10 +2,9 @@ import { Heading, Text, useDisclosure, Box } from '@chakra-ui/react'
 import { useRef } from 'react'
 import ModalComponent from '../components/modal'
 import { textTrampos } from '../constants/text'
-import variants from '../helpers/variants'
 import { Imagine, RootObject, ModalProps } from '../interfaces/typings'
 import blurDataURLi from '../utils/blurhash'
-import MotionFlex from '../utils/flex'
+import Container from '../utils/flex'
 import ChakraImage from '../utils/image'
 
 function Trampos(posts: Imagine) {
@@ -24,18 +23,7 @@ function Trampos(posts: Imagine) {
     onOpen()
   }
   return (
-    <MotionFlex
-      width="100%"
-      minH="fit-content"
-      justify="center"
-      align="center"
-      direction="column"
-      paddingY={5}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
-    >
+    <Container>
       <Heading>{textTrampos.title}</Heading>
       <Text marginTop={3} marginBottom={8}>
         {textTrampos.phrase}
@@ -93,7 +81,7 @@ function Trampos(posts: Imagine) {
         srcing={srcModal.current}
         bluring={srcBlur.current}
       />
-    </MotionFlex>
+    </Container>
   )
 }
 
