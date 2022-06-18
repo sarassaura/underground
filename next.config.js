@@ -33,7 +33,6 @@ module.exports = {
   images: {
     domains: ['images.unsplash.com'],
     contentSecurityPolicy: ``,
-    minimumCacheTTL: 31536000,
   },
 }
 
