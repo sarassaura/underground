@@ -33,6 +33,8 @@ module.exports = {
   images: {
     domains: ['images.unsplash.com'],
     contentSecurityPolicy: ``,
+    cacheControl: 'public, max-age=31536000, immutable',
+    minimumCacheTTL: 31536000,
   },
 }
 
