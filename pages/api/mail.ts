@@ -55,6 +55,5 @@ export default async function handler(
       }
     })
   })
-  transporter.sendMail(mailOption)
   res.status(200).json({ status: 'Ok' })
 }
