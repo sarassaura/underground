@@ -23,7 +23,7 @@ export default function handler(
     },
   })
   await new Promise((resolve, reject) => {
-    transporter.verify(function (error, success) {
+    transporter.verify((error, success) => {
       if (error) {
         console.log(error)
         reject(error)
