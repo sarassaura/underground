@@ -1,34 +1,78 @@
-## How to use
+# Personal Portfolio
 
-Execute:
+<div align="center">
 
-```bash
-yarn set version berry
-yarn install
-yarn dlx @yarnpkg/sdks vscode
+![Banner](/public/Banner.png?raw=true)
+
+[Features](#features) •
+[Installation](#installation) •
+[Usage](#usage) •
+[Environment Variables](#environment-variables)
+
+![Home](/public/Home.gif)
+![Portfolio](/public/Portfolio.gif)
+![Contact](/public/Contact.gif)
+
+A `tattoo-artist` personal portfolio with Unsplash Gallery.
+
+</div>
+
+## Features
+
+- Image Gallery connected with _unsplash_
+- Lazy loading images with _blurhash_
+- Automatic e-mails with _nodemailer_
+- Form Validation with _react-hook-form_
+- Beautiful UI and dark-mode with _chakra-ui_
+- Beautiful Page Animations with _framer-motion_
+- Responsive UI
+- Sitemap with _next-sitemap_
+- SEO with _next-seo_
+
+## Installation
+
+```sh
+# Clone this repository
+$ git@github.com:florescente/underground.git
+
+# Go into the repository
+$ cd underground
+
+# Install dependencies
+$ npm install
+OR
+$ yarn set version berry
+$ yarn install
+$ yarn dlx @yarnpkg/sdks vscode
+
+
+# Run the app
+$ npm run dev
+OR
+$ yarn dev
 ```
 
-VScode configuration:
+## Usage
 
-```bash
-Select Typescript Version: Workspace Version
-Select Language Mode: Typescript React
-```
+1. Create an Unsplash Account
+2. Create a Gmail Account
+3. Get Unsplash Config Info
+4. Generate Gmail App password
+5. Configure URL in trampos.tsx static props
+6. Set the environment variables
+7. run
 
-Environmental variables(.env.local):
+## Environment variables
 
 ```bash
 NEXT_PUBLIC_API_KEY_UNSPLASH - Unsplash API
-LD_LIBRARY_PATH=/var/task/node_modules/canvas/build/Release - Canvas
+LD_LIBRARY_PATH=/var/task/node_modules/canvas/build/Release - Canvas Bug
 EMAIL - GMAIL
 PASSWORD - Gerar senha de APP
 ```
 
-## Deploy your own
+## Meta
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Created By Florescente:
+[github.com/florescente](https://github.com/florescente)
 

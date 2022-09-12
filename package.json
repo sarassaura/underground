@@ -12,7 +12,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.1.2",
+    "@chakra-ui/react": "^2.3.2",
+    "@chakra-ui/styled-system": "^2.3.1",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@next/env": "^12.1.6",
