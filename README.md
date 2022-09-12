@@ -9,7 +9,7 @@
 [Usage](#usage) •
 [Environment Variables](#environment-variables)
 
-![Home](/public/Home.gif)
+![Home](/public/Page.gif)
 ![Portfolio](/public/Portfolio.gif)
 ![Contact](/public/Contact.gif)
 
@@ -26,6 +26,7 @@ A `tattoo-artist` personal portfolio with Unsplash Gallery.
 - Beautiful UI and dark-mode with _chakra-ui_
 - Beautiful Page Animations with _framer-motion_
 - Responsive UI
+- Static Generated Pages with _nextjs_
 - Sitemap with _next-sitemap_
 - SEO with _next-seo_
 
