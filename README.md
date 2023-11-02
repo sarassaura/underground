@@ -9,9 +9,9 @@
 [Usage](#usage) •
 [Environment Variables](#environment-variables)
 
-![Home](/public/Page.gif)
-![Portfolio](/public/Portfolio.gif)
-![Contact](/public/Contact.gif)
+![Home](/public/page.gif)
+![Portfolio](/public/portfolio.gif)
+![Contact](/public/contact.gif)
 
 A `tattoo-artist` personal portfolio with Unsplash Gallery.
 
