@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Banner](/public/banner.png?raw=true)
+![Banner](/public/banner.webp?raw=true)
 
 [Features](#features) •
 [Installation](#installation) •
