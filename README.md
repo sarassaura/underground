@@ -2,18 +2,18 @@
 
 <div align="center">
 
-A `tattoo-artist` personal portfolio with Unsplash Gallery.
-
-[🇬🇧 English](/README.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[🇪🇸 Español](/README.es.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[🇧🇷 Português](/README.pt-BR.md)
-
 ![Banner](/public/banner.png?raw=true)
+
+A `tattoo-artist` personal portfolio with Unsplash Gallery.
 
 [Features](#features) •
 [Installation](#installation) •
 [Usage](#usage) •
 [Environment Variables](#environment-variables)
+
+[🇬🇧 English](/README.md)&nbsp;&nbsp; • &nbsp;&nbsp;
+[🇪🇸 Español](/README.es.md)&nbsp;&nbsp; • &nbsp;&nbsp;
+[🇧🇷 Português](/README.pt-BR.md)
 
 ![Home](/public/page.gif)
 ![Portfolio](/public/portfolio.gif)
