@@ -2,13 +2,13 @@
 
 <div align="center">
 
-![Banner](/public/banner.png?raw=true)
-
 A `tattoo-artist` personal portfolio with Unsplash Gallery.
 
-[Features](#features) •
-[Installation](#installation) •
-[Usage](#usage) •
+![Banner](/public/banner.png?raw=true)
+
+[Features](#features)&nbsp;&nbsp; • &nbsp;&nbsp;
+[Installation](#installation)&nbsp;&nbsp; • &nbsp;&nbsp;
+[Usage](#usage)&nbsp;&nbsp; • &nbsp;&nbsp;
 [Environment Variables](#environment-variables)
 
 [🇬🇧 English](/README.md)&nbsp;&nbsp; • &nbsp;&nbsp;
