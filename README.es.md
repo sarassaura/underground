@@ -79,6 +79,6 @@ PASSWORD - Gerar senha de APP
 ## Meta
 
 Creado Por Sarassaura:
-[github.com/florescente](https://github.com/sarassaura)
+[github.com/sarassaura](https://github.com/sarassaura)
 
 
