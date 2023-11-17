@@ -78,6 +78,6 @@ PASSWORD - Generate App Password
 
 ## Meta
 
-Created By Florescente:
-[github.com/florescente](https://github.com/florescente)
+Creado Por Sarassaura:
+[github.com/florescente](https://github.com/sarassaura)
 
