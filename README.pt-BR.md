@@ -9,7 +9,7 @@ Um portfolio pessoal de `artista-tatuador` com Unsplash Galeria, Imagens em Blur
 [Tecnologias](#tecnologias)&nbsp;&nbsp; • &nbsp;&nbsp;
 [Instalação](#instalação)&nbsp;&nbsp; • &nbsp;&nbsp;
 [Como Usar](#como-usar)&nbsp;&nbsp; • &nbsp;&nbsp;
-[Váriáveis de Ambiente](#variáveis-de-ambiente)
+[Variáveis de Ambiente](#variáveis-de-ambiente)
 
 [🇬🇧 English](/README.md)&nbsp;&nbsp; • &nbsp;&nbsp;
 [🇪🇸 Español](/README.es.md)&nbsp;&nbsp; • &nbsp;&nbsp;
@@ -67,7 +67,7 @@ $ yarn dev
 6. Set the environment variables
 7. run
 
-## Váriáveis de Ambiente
+## Variáveis de Ambiente
 
 ```bash
 NEXT_PUBLIC_API_KEY_UNSPLASH - Unsplash API
