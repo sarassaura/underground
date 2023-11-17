@@ -73,7 +73,7 @@ $ yarn dev
 NEXT_PUBLIC_API_KEY_UNSPLASH - Unsplash API
 LD_LIBRARY_PATH=/var/task/node_modules/canvas/build/Release - Canvas Bug
 EMAIL - GMAIL
-PASSWORD - Gerar senha de APP
+PASSWORD - Generate App Password
 ```
 
 ## Meta
