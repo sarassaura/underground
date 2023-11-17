@@ -15,9 +15,11 @@ Un portafolio personal de "artista-tatuador" con Unsplash Galeria, Imagens com B
 [🇪🇸 Español](/README.es.md)&nbsp;&nbsp; • &nbsp;&nbsp;
 [🇧🇷 Português](/README.pt-BR.md)
 
-![Home](/public/page.gif)
-![Portfolio](/public/portfolio.gif)
-![Contact](/public/contact.gif)
+https://github.com/sarassaura/underground/assets/141577271/ab0e73c5-0e4b-4bc5-9084-375503aaedd5
+
+https://github.com/sarassaura/underground/assets/141577271/6ef11f01-4600-4d0c-b2d2-36e251a2b7a1
+
+https://github.com/sarassaura/underground/assets/141577271/e81af3c7-7ba3-4e00-b03b-ea8c8bb2311c
 
 </div>
 
