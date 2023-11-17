@@ -23,49 +23,49 @@ Um portfolio pessoal de `artista-tatuador` com Unsplash Galeria, Imagens em Blur
 
 ## Tecnologias
 
-- Image Gallery connected with _unsplash_
-- Lazy loading images with _blurhash_
-- Automatic e-mails with _nodemailer_
-- Form Validation with _react-hook-form_
-- Beautiful UI and dark-mode with _chakra-ui_
-- Beautiful Page Animations with _framer-motion_
-- Responsive UI
-- Static Generated Pages with _nextjs_
-- Sitemap with _next-sitemap_
-- SEO with _next-seo_
+- Galeria de Imagem conectada com _unsplash_
+- Carregamento preguiçoso de imagens com _blurhash_
+- Emails automáticos com _nodemailer_
+- Validação de Formulário com _react-hook-form_
+- Lindas UI e Modo Noite com _chakra-ui_
+- Belíssimas Animações de Página com _framer-motion_
+- Design Responsivo
+- Páginas Geradas Estaticamente com _nextjs_
+- Sitemap com _next-sitemap_
+- SEO com _next-seo_
 
 ## Instalação
 
 ```sh
-# Clone this repository
+# Clone esse repositório
 $ git@github.com:florescente/underground.git
 
-# Go into the repository
+# Entre na pasta
 $ cd underground
 
-# Install dependencies
+# Instale dependências
 $ npm install
-OR
+OU
 $ yarn set version berry
 $ yarn install
 $ yarn dlx @yarnpkg/sdks vscode
 
 
-# Run the app
+# Rode o App
 $ npm run dev
-OR
+OU
 $ yarn dev
 ```
 
 ## Como Usar
 
-1. Create an Unsplash Account
-2. Create a Gmail Account
-3. Get Unsplash Config Info
-4. Generate Gmail App password
-5. Configure URL in trampos.tsx static props
-6. Set the environment variables
-7. run
+1. Crie uma conta no Unsplash
+2. Crie uma conta no Gmail
+3. Pegue as informações de configuração do Unsplash
+4. Gere uma senha de app no Gmail
+5. Configure a URL em trampos.tsx static props
+6. Crie as variáveis de ambiente
+7. Rode
 
 ## Variáveis de Ambiente
 
