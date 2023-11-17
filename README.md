@@ -2,7 +2,7 @@
 
 <div align="center">
 
-A `tattoo-artist` personal portfolio with Unsplash Gallery.
+A `tattoo-artist` personal portfolio with Unsplash Gallery, Blurhash Images and SSG.
 
 ![Banner](/public/banner.png?raw=true)
 
