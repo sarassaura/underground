@@ -15,9 +15,9 @@ A `tattoo-artist` personal portfolio with Unsplash Gallery, Blurhash Images and 
 [🇪🇸 Español](/README.es.md)&nbsp;&nbsp; • &nbsp;&nbsp;
 [🇧🇷 Português](/README.pt-BR.md)
 
-![Home](/public/page.gif)
-![Portfolio](/public/portfolio.gif)
-![Contact](/public/contact.gif)
+![Home](/public/page.mp4)
+![Portfolio](/public/portfolio.mp4)
+![Contact](/public/contact.mp4)
 
 </div>
 
