@@ -40,7 +40,7 @@ https://github.com/sarassaura/underground/assets/141577271/e81af3c7-7ba3-4e00-b0
 
 ```sh
 # Clonar este repositorio
-$ git@github.com:florescente/underground.git
+$ git@github.com:sarassaura/underground.git
 
 # Ingrese a la carpeta
 $ cd underground
