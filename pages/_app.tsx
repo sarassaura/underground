@@ -19,20 +19,20 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           openGraph={{
             type: 'website',
             locale: 'pt_BR',
-            url: 'https://www.undergroundtattoo.com.br/',
+            url: 'https://underground-navy.vercel.app/',
             site_name: 'Underground',
             images: [
               {
                 url: './pai.webp',
                 width: 320,
                 height: 214,
-                alt: 'Vitor Valentim',
+                alt: 'Joe Doe',
                 type: 'image/webp',
               },
             ],
           }}
           twitter={{
-            handle: '@victorvalentim',
+            handle: '@joedoe',
             site: '@undergroundtattoo',
             cardType: 'summary_large_image',
           }}

@@ -72,7 +72,7 @@ const textFacts = [
 ]
 
 const textHero = {
-  name: 'Vitor Valentim',
+  name: 'Joe Doe',
   slogan: 'From Hero to Zero',
   brand: 'UnderGround',
 }
